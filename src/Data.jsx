@@ -296,7 +296,7 @@ export const classEdu = [
     id: 1,
     image: class1,
     category: "Back End",
-    title: "Membangun Data Base",
+    title: "Membangun Database",
     description:
       "Basis data atau sekumpulan data yang dikelola sedemikian rupa sesuai.....",
     rating: 4.2,
@@ -306,7 +306,7 @@ export const classEdu = [
     heroes: classHero1,
     year: "2001 Enrolled",
     discount: "FREE",
-    namelink: "course-1",
+    namelink: "Membangun-Database",
   },
   {
     id: 2,
@@ -321,7 +321,7 @@ export const classEdu = [
     price: "50.000",
     heroes: classHero2,
     year: "2001 Enrolled",
-    namelink: "course-2",
+    namelink: "Membuat-Dashboard",
   },
   {
     id: 3,

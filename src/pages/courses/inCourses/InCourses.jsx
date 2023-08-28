@@ -9,7 +9,8 @@ const InCourses = () => {
   const course = RecomEdu.find(course => course.namelink === namelink);
 
   if (!course) {
-    return <div>Course not found</div>;
+    return <div>
+        Belly Testing</div>;
   }
 
   // Display detailed course information
