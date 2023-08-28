@@ -374,7 +374,7 @@ export const classEdu = [
     year: "2001 Enrolled",
   },
   {
-    id: 5,
+    id: 7,
     image: class5,
     category: "Design",
     title: "Figma UI UX Design..",
@@ -385,6 +385,34 @@ export const classEdu = [
     teacher: "John Doe",
     price: "50.000",
     heroes: classHero5,
+    year: "2001 Enrolled",
+  },
+  {
+    id: 8,
+    image: class1,
+    category: "Design",
+    title: "Figma UI UX Design..",
+    description:
+      "Mari bergabung dengan kelas terkenal kami, ilmu yang diberikan pasti akan bermanfaat...",
+    rating: 4.5,
+    participants: "{16,325}",
+    teacher: "John Doe",
+    price: "50.000",
+    heroes: classHero1,
+    year: "2001 Enrolled",
+  },
+  {
+    id: 9,
+    image: class3,
+    category: "Design",
+    title: "Figma UI UX Design..",
+    description:
+      "Mari bergabung dengan kelas terkenal kami, ilmu yang diberikan pasti akan bermanfaat...",
+    rating: 4.5,
+    participants: "{16,325}",
+    teacher: "John Doe",
+    price: "50.000",
+    heroes: classHero3,
     year: "2001 Enrolled",
   },
 ];

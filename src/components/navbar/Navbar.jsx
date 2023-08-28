@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 import { navLinks, eduskill } from "../../Data";
 import { HiMenuAlt1, HiX } from "react-icons/hi";
@@ -6,7 +5,7 @@ import MobileNavLinks from "./MobileNavLinks";
 import { motion } from "framer-motion";
 import { Link, useLocation } from "react-router-dom";
 
-const Navbar =  ({ isActive, setActiveLink })=> {
+const Navbar = ({ isActive, setActiveLink }) => {
   const [toggle, setToggle] = useState(false);
   const [active, setActive] = useState(null);
   const location = useLocation();
@@ -44,28 +43,26 @@ const Navbar =  ({ isActive, setActiveLink })=> {
           </div>
           <div className="container mx-auto flex items-center justify-end">
             <div className="sm:flex hidden font-normal text-sm">
-            {navLinks.map((link) => (
-  <li
-    className={`list-none cursor-pointer mr-8 ${
-      isActive ? "hover:text-red-500" : "hover:text-blue-500"
-    }`}
-    key={link.id}
-  >
-    <Link
-      to={link.href}
-      className={`font-bold transition-all duration-300 ${
-        location.pathname === link.href
-          ? "text-Orange_Primary"
-          : "text-Black_Primary"
-      }`}
-      onClick={() => setActiveLink()}
-    >
-      {link.link}
-    </Link>
-  </li>
-))}
-
-
+              {navLinks.map((link) => (
+                <li
+                  className={`list-none cursor-pointer mr-8 ${
+                    isActive ? "hover:text-red-500" : "hover:text-blue-500"
+                  }`}
+                  key={link.id}
+                >
+                  <Link
+                    to={link.href}
+                    className={`font-bold transition-all duration-300 ${
+                      location.pathname === link.href
+                        ? "text-Orange_Primary"
+                        : "text-Black_Primary"
+                    }`}
+                    onClick={() => setActiveLink()}
+                  >
+                    {link.link}
+                  </Link>
+                </li>
+              ))}
             </div>
             <div className="flex items-center gap-2">
               {/* <button className="py-3 px-6 font-bold text-Black_Primary text-sm">

@@ -1,43 +1,31 @@
 import React, { useState } from "react";
-// import Slider from "react-slick";
 import { RxDotFilled, RxBorderSolid } from "react-icons/rx";
 import Class from "../../components/container/Classes/Class"; // Adjust the path as needed
 import { classEdu } from "../../Data";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Recom from "./Recom";
 
 const Courses = () => {
-  const [activeIndex, setActiveIndex] = useState(0); // Set activeIndex to 0
+  const [activeIndex, setActiveIndex] = useState(0);
 
-  const coursesPerSlide = 6; // Set to 6 to show 6 courses per slide
+  const coursesPerSlide =
+    window.innerWidth >= 1024 ? 6 : window.innerWidth >= 768 ? 2 : 1; // Number of courses to show per slide
   const totalCourses = classEdu.length;
 
   const goToSlide = (slideIndex) => {
-    if (slideIndex !== activeIndex) {
-      setActiveIndex(slideIndex);
-    }
+    setActiveIndex(slideIndex);
   };
-
-  // const sliderSettings = {
-  //   dots: false,
-  //   infinite: true,
-  //   speed: 500,
-  //   slidesToShow: coursesPerSlide,
-  //   slidesToScroll: coursesPerSlide,
-  //   initialSlide: activeIndex, // Set the initialSlide to the activeIndex
-  //   beforeChange: (current, next) => {
-  //     setActiveIndex(next); // Update activeIndex before the slide changes
-  //   },
-  // };
 
   const visibleCourses = [];
   for (
-    let i = activeIndex * coursesPerSlide;
+    let i = activeIndex;
     visibleCourses.length < coursesPerSlide;
     i = (i + 1) % totalCourses
   ) {
     visibleCourses.push(classEdu[i]);
   }
+
   return (
     <div className="container mx-auto pt-24 pb-12 px-6 " id="courses">
       <div className="text-start">
@@ -53,15 +41,18 @@ const Courses = () => {
         </p>{" "}
       </div>
       <div className="mt-4 overflow-x-hidden w-full relative">
-      <div className="grid grid-cols-3 gap-4">
-          {visibleCourses.map((classEdu) => (
+        <div className="grid grid-cols-3 gap-4">
+          {visibleCourses.map((classEdu, index) => (
             <div key={classEdu.id}>
               <Class {...classEdu} />
             </div>
           ))}
         </div>
+
         <div className="flex justify-center items-center mt-4">
-          {Array.from({ length: Math.ceil(totalCourses / coursesPerSlide) }).map((_, slideIndex) => (
+          {Array.from({
+            length: Math.ceil(totalCourses / coursesPerSlide) + 1, // Adding 1 to the length
+          }).map((_, slideIndex) => (
             <div
               key={slideIndex}
               onClick={() => goToSlide(slideIndex)}
@@ -83,12 +74,12 @@ const Courses = () => {
                 ) : (
                   <RxDotFilled className="dot-icon" size={24} color="#D9D9D9" />
                 )}
-                </div>
-                </div>
-                          ))}
-
-          </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
+      {/* <Recom /> */}
     </div>
   );
 };

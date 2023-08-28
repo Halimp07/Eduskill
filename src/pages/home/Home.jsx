@@ -33,15 +33,15 @@ const Home = () => {
     visible: { y: 0, opacity: 1 },
   };
 
-  const selectedId = "career_oriented"; // Replace with the desired id
-  const selectedItem = focus.find((item) => item.id === selectedId);
+  // const selectedId = "career_oriented"; // Replace with the desired id
+  // const selectedItem = focus.find((item) => item.id === selectedId);
 
   return (
     <div className="md:section container mx-auto pt-12 pb-24 px-6 " id="home">
       <img
         src={bg_eduskill_1}
         alt=""
-        className="absolute bg-no-repeat z-0 bottom-0 w-[20rem] top-14 left-0 right-0 md:w-[25rem] md:top-28 md:left-80 md:right-0"
+        className="absolute bg-no-repeat z-0 bottom-0 w-[20rem] top-14 left-0 right-0 lg:w-[25rem] lg:top-20 lg:left-24 lg:right-0 md:w-[25rem] md:top-20 md:left-24 md:right-0"
       />
       <div className="md:flex items-center justify-center relative">
         {/* First Column */}
