@@ -40,7 +40,7 @@ const Classes = () => {
   }
 
   return (
-    <div className="container mx-auto pt-8 pb-0 px-6" id="classes">
+    <div className="container mx-auto pt-8 pb-0 " id="classes">
       <div className="text-start">
         <p className="font-semibold text-sm mb-2 md:text-sm md:mb-2 text-Orange_Primary">
           Jelajahi Kelas{" "}
@@ -54,13 +54,13 @@ const Classes = () => {
         </p>{" "}
       </div>
       <div className="mt-4 overflow-x-hidden w-full relative">
-        <Slider {...sliderSettings}>
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-2">
           {visibleCourses.map((course, index) => (
             <div key={course.id}>
               <Class {...course} />
             </div>
           ))}
-        </Slider>
+        </div>
         <div className="flex justify-center items-center mt-4">
           {courses.map((course, slideIndex) => (
             <div

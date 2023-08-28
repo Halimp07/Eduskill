@@ -38,7 +38,7 @@ const Courses = () => {
         </h1>{" "}
       </div>
       <div className="mt-4 overflow-x-hidden w-full relative">
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-2">
         {visibleCourses.map((course, index) => (
           <div key={course.id}>
             <Link to={`/courses/${course.namelink}`}>
