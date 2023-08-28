@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { RxDotFilled, RxBorderSolid } from "react-icons/rx";
-import Class from "../../components/container/Classes/Class"; // Adjust the path as needed
+import ClassCourse from "./ClassCourse"; // Adjust the path as needed
 import { classEdu } from "../../Data";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -35,16 +35,12 @@ const Courses = () => {
         <h1 className="font-semibold text-xl md:text-3xl md:mb-2 ">
           Kelas Popular Kami{" "}
         </h1>{" "}
-        <p className="font-normal text-base  text-[#667085] ">
-          Mari bergabung dengan kelas terkenal kami, ilmu yang diberikan pasti
-          akan bermanfaat bagi Anda.{" "}
-        </p>{" "}
       </div>
       <div className="mt-4 overflow-x-hidden w-full relative">
-        <div className="grid grid-cols-3 gap-4">
-          {visibleCourses.map((classEdu, index) => (
-            <div key={classEdu.id}>
-              <Class {...classEdu} />
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4">
+          {visibleCourses.map((course, index) => (
+            <div key={course.id}>
+              <ClassCourse {...course} />
             </div>
           ))}
         </div>
@@ -79,7 +75,7 @@ const Courses = () => {
           ))}
         </div>
       </div>
-      {/* <Recom /> */}
+      <Recom />
     </div>
   );
 };

@@ -288,31 +288,35 @@ export const reviewsEdu = [
   },
 ];
 
+// <----------------------------------->
+
+// 2nd Page Course.jsx
 export const classEdu = [
   {
     id: 1,
     image: class1,
-    category: "Design",
-    title: "Figma UI UX Design..",
+    category: "Back End",
+    title: "Membangun Data Base",
     description:
-      "Mari bergabung dengan kelas terkenal kami, ilmu yang diberikan pasti akan bermanfaat...",
-    rating: 4.5,
-    participants: "{16,325}",
-    teacher: "John Doe",
-    price: "50.000",
+      "Basis data atau sekumpulan data yang dikelola sedemikian rupa sesuai.....",
+    rating: 4.2,
+    participants: "{125}",
+    teacher: "Esther Howard",
+    price: "0",
     heroes: classHero1,
     year: "2001 Enrolled",
+    discount: "FREE",
   },
   {
     id: 2,
     image: class2,
-    category: "Design",
-    title: "Figma UI UX Design..",
+    category: "UI/UX",
+    title: "Membuat Dashboard ...",
     description:
       "Mari bergabung dengan kelas terkenal kami, ilmu yang diberikan pasti akan bermanfaat...",
-    rating: 4.5,
-    participants: "{16,325}",
-    teacher: "John Doe",
+    rating: 4.3,
+    participants: "{(16,325)}",
+    teacher: "Jane Cooper",
     price: "50.000",
     heroes: classHero2,
     year: "2001 Enrolled",
@@ -320,56 +324,57 @@ export const classEdu = [
   {
     id: 3,
     image: class3,
-    category: "Design",
-    title: "Figma UI UX Design..",
+    category: "Full Stack",
+    title: "Belajar bersama Shoaib..",
     description:
-      "Mari bergabung dengan kelas terkenal kami, ilmu yang diberikan pasti akan bermanfaat...",
+      "Rancang Situs Web dan Aplikasi Seluler yang Disukai Pengguna Anda dan Kembali..",
     rating: 4.5,
-    participants: "{16,325}",
-    teacher: "John Doe",
-    price: "50.000",
+    participants: "{832}",
+    teacher: "Jenny Wilson",
+    price: "59.000",
     heroes: classHero3,
     year: "2001 Enrolled",
   },
   {
     id: 4,
     image: class4,
-    category: "Design",
-    title: "Figma UI UX Design..",
+    category: "Full Stack",
+    title: "Web Development  mic...",
     description:
-      "Mari bergabung dengan kelas terkenal kami, ilmu yang diberikan pasti akan bermanfaat...",
+      "Rancang Situs Web dan Aplikasi Seluler yang Disukai Pengguna Anda dan Kembali..",
     rating: 4.5,
-    participants: "{16,325}",
-    teacher: "John Doe",
-    price: "50.000",
+    participants: "{832}",
+    teacher: "Jenny Wilson",
+    price: "59.000",
     heroes: classHero4,
     year: "2001 Enrolled",
   },
   {
     id: 5,
     image: class5,
-    category: "Design",
-    title: "Figma UI UX Design..",
+    category: "Back End",
+    title: "Dashboard Absensi Onl..",
     description:
       "Mari bergabung dengan kelas terkenal kami, ilmu yang diberikan pasti akan bermanfaat...",
-    rating: 4.5,
+    rating: 4.3,
     participants: "{16,325}",
-    teacher: "John Doe",
-    price: "50.000",
+    teacher: "Jane Cooper",
+    price: "0",
     heroes: classHero5,
     year: "2001 Enrolled",
+    discount: "FREE",
   },
   {
     id: 6,
     image: class6,
-    category: "Design",
-    title: "Figma UI UX Design..",
+    category: "Front End",
+    title: "Membangun Website...",
     description:
-      "Mari bergabung dengan kelas terkenal kami, ilmu yang diberikan pasti akan bermanfaat...",
-    rating: 4.5,
-    participants: "{16,325}",
-    teacher: "John Doe",
-    price: "50.000",
+      "Pelajari cara menerapkan prinsip Pengalaman Pengguna (UX) ke desain ...",
+    rating: 4.2,
+    participants: "{125}",
+    teacher: "Esther Howard",
+    price: "79.000",
     heroes: classHero6,
     year: "2001 Enrolled",
   },
@@ -417,6 +422,7 @@ export const classEdu = [
   },
 ];
 
+// Recom Section of Course.jsx
 export const RecomEdu = [
   {
     id: 1,
@@ -448,7 +454,7 @@ export const RecomEdu = [
   },
   {
     id: 3,
-    image: recom2,
+    image: recom3,
     category: "Design",
     title: "Figma UI UX Design..",
     description:
@@ -457,7 +463,7 @@ export const RecomEdu = [
     participants: "{16,325}",
     teacher: "John Doe",
     price: "50.000",
-    heroes: recomHero2,
+    heroes: recomHero3,
     year: "2001 Enrolled",
   },
 ];
