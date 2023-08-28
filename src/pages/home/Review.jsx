@@ -18,7 +18,7 @@ function Review() {
   };
 
   return (
-    <div className="section pt-0 pb-24 px-6" id="review">
+    <div className="pt-0 pb-24" id="review">
       <div className="flex flex-col justify-center items-center">
         <img
           src={Logo} // Replace with your image URL

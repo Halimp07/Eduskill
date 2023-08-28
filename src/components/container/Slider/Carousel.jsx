@@ -57,7 +57,7 @@ function Carousel() {
       <h1 className="font-semibold text-xl mb-10 text-center md:text-3xl md:mb-10 md:mx-56">
         Membina lingkungan belajar yang menyenangkan & menarik
       </h1>{" "}
-      <div className="mt-4 grid md:grid-cols-3 grid-cols-2 gap-2 md:gap-8">
+      <div className="mt-4 grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2 gap-2 md:gap-8">
         {visibleSlides.map((slide, slideIndex) => (
           <div
             key={startIndex + slideIndex}

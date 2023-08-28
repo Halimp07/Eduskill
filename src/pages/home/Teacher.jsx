@@ -5,7 +5,7 @@ import Circular from "../../components/container/CircularImg/CircularImg";
 
 const Teacher = () => {
   return (
-    <div className="section mx-auto pt-0 md:pb-24 pb-2 px-6" id="teacher">
+    <div className="section mx-auto pt-0 md:pb-24 pb-2" id="teacher">
       <div className="flex flex-col justify-center items-center mt-20">
         <p className="font-semibold text-sm mb-2 text-center md:text-sm md:mb-2 text-Orange_Primary">
           Tutor{" "}

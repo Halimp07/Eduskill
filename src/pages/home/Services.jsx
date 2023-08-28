@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 const Services = () => {
   return (
-    <div className="container mx-auto pt-0 pb-20 px-6 md:pt-8" id="Services">
+    <div className="mx-auto pt-0 pb-20 md:pt-8" id="services">
       <Carousel />
     </div>
   );
