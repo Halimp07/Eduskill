@@ -13,6 +13,7 @@ const ClassCourse = ({
   price,
   year,
   discount,
+  namelink,
 }) => {
   const ratingInteger = Math.floor(rating);
   const ratingFraction = rating - ratingInteger;

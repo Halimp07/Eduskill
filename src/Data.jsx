@@ -306,6 +306,7 @@ export const classEdu = [
     heroes: classHero1,
     year: "2001 Enrolled",
     discount: "FREE",
+    namelink: "course-1",
   },
   {
     id: 2,
@@ -320,6 +321,7 @@ export const classEdu = [
     price: "50.000",
     heroes: classHero2,
     year: "2001 Enrolled",
+    namelink: "course-2",
   },
   {
     id: 3,
@@ -334,6 +336,8 @@ export const classEdu = [
     price: "59.000",
     heroes: classHero3,
     year: "2001 Enrolled",
+        namelink: "course-3",
+
   },
   {
     id: 4,
@@ -348,6 +352,8 @@ export const classEdu = [
     price: "59.000",
     heroes: classHero4,
     year: "2001 Enrolled",
+        namelink: "course-4",
+
   },
   {
     id: 5,
@@ -363,6 +369,8 @@ export const classEdu = [
     heroes: classHero5,
     year: "2001 Enrolled",
     discount: "FREE",
+        namelink: "course-5",
+
   },
   {
     id: 6,
@@ -377,6 +385,7 @@ export const classEdu = [
     price: "79.000",
     heroes: classHero6,
     year: "2001 Enrolled",
+    namelink: "course-6",
   },
   {
     id: 7,
@@ -391,6 +400,7 @@ export const classEdu = [
     price: "50.000",
     heroes: classHero5,
     year: "2001 Enrolled",
+    namelink: "course-7",
   },
   {
     id: 8,
@@ -405,6 +415,7 @@ export const classEdu = [
     price: "50.000",
     heroes: classHero1,
     year: "2001 Enrolled",
+    namelink: "course-8",
   },
   {
     id: 9,
@@ -419,6 +430,8 @@ export const classEdu = [
     price: "50.000",
     heroes: classHero3,
     year: "2001 Enrolled",
+    namelink: "course-9",
+
   },
 ];
 
@@ -437,6 +450,7 @@ export const RecomEdu = [
     price: "50.000",
     heroes: recomHero1,
     year: "2001 Enrolled",
+    
   },
   {
     id: 2,

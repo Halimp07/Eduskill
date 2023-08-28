@@ -5,6 +5,7 @@ import Classes from "./components/container/Classes/Classes";
 import Review from "./pages/home/Review";
 import Footer from "./components/footer/footer";
 import Navbar from "./components/navbar/Navbar";
-import Courses from "./pages/course/Courses"
+import Courses from "./pages/courses/Courses"
+import InCourses from "./pages/courses/inCourses/InCourses";
 
-export { Navbar, Home, Services, Classes, Teacher, Review, Footer, Courses };
+export { Navbar, Home, Services, Classes, Teacher, Review, Footer, Courses, InCourses };

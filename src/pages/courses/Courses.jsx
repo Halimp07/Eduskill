@@ -5,6 +5,7 @@ import { classEdu } from "../../Data";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Recom from "./Recom";
+import { Link } from "react-router-dom";
 
 const Courses = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -37,13 +38,16 @@ const Courses = () => {
         </h1>{" "}
       </div>
       <div className="mt-4 overflow-x-hidden w-full relative">
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4">
-          {visibleCourses.map((course, index) => (
-            <div key={course.id}>
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4">
+        {visibleCourses.map((course, index) => (
+          <div key={course.id}>
+            <Link to={`/courses/${course.namelink}`}>
+              {/* Use the ClassCourse component or customize as needed */}
               <ClassCourse {...course} />
-            </div>
-          ))}
-        </div>
+            </Link>
+          </div>
+        ))}
+      </div>
 
         <div className="flex justify-center items-center mt-4">
           {Array.from({

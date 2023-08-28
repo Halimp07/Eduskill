@@ -3,6 +3,7 @@ import {
   Home,
   Footer,
   Courses,
+  InCourses,
 } from "./index";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -13,7 +14,8 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route exact path="/" element={<Home/>}/>
-          <Route path="/courses" element={<Courses/>}/> 
+          <Route path="/courses" element={<Courses />} />
+          <Route path="/courses/:namelink" element={<InCourses />} />
         </Routes>
         <Footer />
       </Router>

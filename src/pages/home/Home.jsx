@@ -165,14 +165,14 @@ const Home = () => {
           <p class="font-bold text-2xl md:text-xl text-Orange_Primary">10+</p>
           <p class="text-2xl md:text-xl">Collaborations</p>
         </div>
-        <div
-       
-         
-          className="flex items-center justify-center md:justify-center flex-wrap gap-16 pt-4 md:pt-0"
-        >
+        <div className="flex items-center justify-center md:justify-center flex-wrap gap-16 pt-4 md:pt-0">
           {logos.map((logo, index) => (
-            <div   data-aos="flip-left"
-            data-aos-delay="200"  className="w-9" key={index}>
+            <div
+              data-aos="flip-left"
+              data-aos-delay="200"
+              className="w-9"
+              key={index}
+            >
               <img src={logo} alt="" className="w-full object-cover" />
             </div>
           ))}
