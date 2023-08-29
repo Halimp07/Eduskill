@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { BsPlayCircle, BsPlayFill, BsChevronLeft, BsBookmark, BsFillBookmarkFill } from "react-icons/bs";
+import { FaRegShareSquare } from "react-icons/fa";
 
 const VideoComponent = ({ videoUrl, cover }) => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -54,7 +55,7 @@ const VideoComponent = ({ videoUrl, cover }) => {
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
               <BsPlayCircle className="w-16 h-16 text-white cursor-pointer" onClick={togglePlay}/>
             </div>
-            <div className="absolute flex space-x-3 items-center  bottom-2 left-2">
+            <div className="absolute flex space-x-5 items-center left-0 bottom-4 ml-6">
               <div className="text-white">
                 {Math.floor(currentTime / 60)}:{Math.floor(currentTime % 60).toString().padStart(2, "0")}
                 &nbsp;/&nbsp;
@@ -62,6 +63,10 @@ const VideoComponent = ({ videoUrl, cover }) => {
               </div>
               <BsPlayFill className="text-white w-8 h-8" />
             </div>
+            <div className="absolute flex space-x-5 items-center right-0 bottom-4 mr-6">
+              <FaRegShareSquare className="text-white w-5 h-5" />
+            </div>
+            
           </div>
         )}
       </div>
