@@ -73,6 +73,8 @@ import recomHero1 from "./assets/pages/CoursesHero/recomHero1.png";
 import recomHero2 from "./assets/pages/CoursesHero/recomHero2.png";
 import recomHero3 from "./assets/pages/CoursesHero/recomHero3.png";
 
+// Cover Video
+import cover1 from "./assets/pages/CoverVideo/cover1.png";
 
 // Export navLinks for link href
 export const navLinks = [
@@ -309,6 +311,7 @@ export const classEdu = [
     discount: "FREE",
     namelink: "membangun-database",
     video: "https://www.youtube.com/watch?v=TngsP0kfAxg&list=PLc6SEcJkQ6DxQmmUzUilxRUNrJyeHDmX7",
+    cover: cover1,
   },
   {
     id: 2,
@@ -324,7 +327,7 @@ export const classEdu = [
     heroes: classHero2,
     year: "2001 Enrolled",
     namelink: "membuat-dashboard",
-    video: "https://www.youtube.com/watch?v=TngsP0kfAxg&list=PLc6SEcJkQ6DxQmmUzUilxRUNrJyeHDmX7",
+    video: "https://www.youtube.com/watch?v=z3slaXqmkT0&list=PLFIM0718LjIUHFRMzPJ0wGjx9_NlC5d1h",
   },
   {
     id: 3,
