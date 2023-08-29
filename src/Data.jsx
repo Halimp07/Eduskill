@@ -49,7 +49,7 @@ import reviews1 from "./assets/reviews_1.png";
 import reviews2 from "./assets/circular_teacher1.png";
 import reviews3 from "./assets/reviews_1.png";
 
-// Pages Class
+// 2nd Pages Class
 import class1 from "./assets/pages/Courses/class1.png";
 import class2 from "./assets/pages/Courses/class2.png";
 import class3 from "./assets/pages/Courses/class3.png";
@@ -73,7 +73,8 @@ import recomHero1 from "./assets/pages/CoursesHero/recomHero1.png";
 import recomHero2 from "./assets/pages/CoursesHero/recomHero2.png";
 import recomHero3 from "./assets/pages/CoursesHero/recomHero3.png";
 
-// Export
+
+// Export navLinks for link href
 export const navLinks = [
   {
     id: 1,
@@ -307,6 +308,7 @@ export const classEdu = [
     year: "2001 Enrolled",
     discount: "FREE",
     namelink: "membangun-database",
+    video: "https://www.youtube.com/watch?v=TngsP0kfAxg&list=PLc6SEcJkQ6DxQmmUzUilxRUNrJyeHDmX7",
   },
   {
     id: 2,
@@ -322,6 +324,7 @@ export const classEdu = [
     heroes: classHero2,
     year: "2001 Enrolled",
     namelink: "membuat-dashboard",
+    video: "https://www.youtube.com/watch?v=TngsP0kfAxg&list=PLc6SEcJkQ6DxQmmUzUilxRUNrJyeHDmX7",
   },
   {
     id: 3,
@@ -476,3 +479,4 @@ export const RecomEdu = [
     year: "2001 Enrolled",
   },
 ];
+
