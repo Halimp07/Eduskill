@@ -31,11 +31,11 @@ const Courses = () => {
     <div className="container mx-auto pt-24 pb-12 px-6 " id="courses">
       <div className="text-start">
         <p className="font-semibold text-sm mb-2 md:text-sm md:mb-2 text-Orange_Primary">
-          Jelajahi Kelas{" "}
-        </p>{" "}
+          Jelajahi Kelas
+        </p>
         <h1 className="font-semibold text-xl md:text-3xl md:mb-2 ">
-          Kelas Popular Kami{" "}
-        </h1>{" "}
+          Kelas Popular Kami
+        </h1>
       </div>
       <div className="mt-4 overflow-x-hidden w-full relative">
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-2">

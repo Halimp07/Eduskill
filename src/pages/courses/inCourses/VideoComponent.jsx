@@ -52,8 +52,9 @@ const VideoComponent = ({ videoUrl, cover }) => {
                 <BsBookmark className="w-8 h-8 text-white" />
               )}
             </div>
+
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-              <BsPlayCircle className="w-16 h-16 text-white cursor-pointer" onClick={togglePlay}/>
+              <BsPlayCircle className="w-16 h-16 text-white hover:text-Orange_Primary cursor-pointer" onClick={togglePlay}/>
             </div>
             <div className="absolute flex space-x-5 items-center left-0 bottom-4 ml-6">
               <div className="text-white">
