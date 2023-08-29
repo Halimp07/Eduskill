@@ -306,7 +306,7 @@ export const classEdu = [
     heroes: classHero1,
     year: "2001 Enrolled",
     discount: "FREE",
-    namelink: "Membangun-Database",
+    namelink: "membangun-database",
   },
   {
     id: 2,
@@ -321,7 +321,7 @@ export const classEdu = [
     price: "50.000",
     heroes: classHero2,
     year: "2001 Enrolled",
-    namelink: "Membuat-Dashboard",
+    namelink: "membuat-dashboard",
   },
   {
     id: 3,
@@ -336,8 +336,7 @@ export const classEdu = [
     price: "59.000",
     heroes: classHero3,
     year: "2001 Enrolled",
-        namelink: "course-3",
-
+    namelink: "belajar-bersama-shoaib",
   },
   {
     id: 4,
@@ -352,8 +351,7 @@ export const classEdu = [
     price: "59.000",
     heroes: classHero4,
     year: "2001 Enrolled",
-        namelink: "course-4",
-
+    namelink: "web-development",
   },
   {
     id: 5,
@@ -369,8 +367,7 @@ export const classEdu = [
     heroes: classHero5,
     year: "2001 Enrolled",
     discount: "FREE",
-        namelink: "course-5",
-
+    namelink: "dashboard-absensi-online",
   },
   {
     id: 6,
@@ -385,7 +382,7 @@ export const classEdu = [
     price: "79.000",
     heroes: classHero6,
     year: "2001 Enrolled",
-    namelink: "course-6",
+    namelink: "membangun-website",
   },
   {
     id: 7,
@@ -400,7 +397,7 @@ export const classEdu = [
     price: "50.000",
     heroes: classHero5,
     year: "2001 Enrolled",
-    namelink: "course-7",
+    namelink: "figma-ui-ux-design",
   },
   {
     id: 8,
@@ -415,7 +412,7 @@ export const classEdu = [
     price: "50.000",
     heroes: classHero1,
     year: "2001 Enrolled",
-    namelink: "course-8",
+    namelink: "test",
   },
   {
     id: 9,
@@ -430,8 +427,7 @@ export const classEdu = [
     price: "50.000",
     heroes: classHero3,
     year: "2001 Enrolled",
-    namelink: "course-9",
-
+    namelink: "test",
   },
 ];
 
@@ -450,7 +446,6 @@ export const RecomEdu = [
     price: "50.000",
     heroes: recomHero1,
     year: "2001 Enrolled",
-    
   },
   {
     id: 2,

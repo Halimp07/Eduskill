@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import { RxDotFilled, RxBorderSolid } from "react-icons/rx";
 import { motion } from "framer-motion";
 import Class from "./Class"; // Adjust the path as needed
@@ -18,17 +18,17 @@ const Classes = () => {
     setActiveIndex(slideIndex);
   };
 
-  const sliderSettings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: coursesPerSlide,
-    slidesToScroll: coursesPerSlide,
-    initialSlide: activeIndex, // Set the initialSlide to the activeIndex
-    beforeChange: (current, next) => {
-      setActiveIndex(next); // Update activeIndex before the slide changes
-    },
-  };
+  // const sliderSettings = {
+  //   dots: false,
+  //   infinite: true,
+  //   speed: 500,
+  //   slidesToShow: coursesPerSlide,
+  //   slidesToScroll: coursesPerSlide,
+  //   initialSlide: activeIndex, // Set the initialSlide to the activeIndex
+  //   beforeChange: (current, next) => {
+  //     setActiveIndex(next); // Update activeIndex before the slide changes
+  //   },
+  // };
 
   const visibleCourses = [];
   for (
@@ -43,15 +43,15 @@ const Classes = () => {
     <div className="container mx-auto pt-8 pb-0 " id="classes">
       <div className="text-start">
         <p className="font-semibold text-sm mb-2 md:text-sm md:mb-2 text-Orange_Primary">
-          Jelajahi Kelas{" "}
-        </p>{" "}
+          Jelajahi Kelas
+        </p>
         <h1 className="font-semibold text-xl md:text-3xl md:mb-2 ">
-          Kelas Popular Kami{" "}
-        </h1>{" "}
+          Kelas Popular Kami
+        </h1>
         <p className="font-normal text-base  text-[#667085] ">
           Mari bergabung dengan kelas terkenal kami, ilmu yang diberikan pasti
-          akan bermanfaat bagi Anda.{" "}
-        </p>{" "}
+          akan bermanfaat bagi Anda.
+        </p>
       </div>
       <div className="mt-4 overflow-x-hidden w-full relative">
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-2">
@@ -95,7 +95,7 @@ const Classes = () => {
             transition={{ duration: 0.3 }}
           >
             <button className="bg-[#F9FAFB] text-black py-2 px-4 text-extra-mini font-semibold rounded-md border border-[#D0D5DD] border-opacity-30 hover:bg-Orange_Primary hover:text-white hover:border-none transition-all">
-              Jelajahi Kelas Lainnya{" "}
+              Jelajahi Kelas Lainnya
             </button>
           </motion.form>
         </div>
