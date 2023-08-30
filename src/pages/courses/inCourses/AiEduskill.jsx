@@ -11,7 +11,7 @@ const systemMessage = {
 function AiEduskill() {
   const [messages, setMessages] = useState([
     {
-      message: "Hello, I'm ChatGPT! Ask me anything!",
+      message: "Halo!, Aku Skillbot tanyakan apa saja padaku!",
       sentTime: "just now",
       sender: "ChatGPT"
     }
@@ -84,12 +84,12 @@ function AiEduskill() {
 
   return (
     <div className="">
-      <div className='relative h-[600px] w-full '>
-        <MainContainer>
-          <ChatContainer>       
+      <div className="relative h-[600px] w-full">
+        <MainContainer >
+          <ChatContainer >       
             <MessageList 
               scrollBehavior="smooth" 
-              typingIndicator={isTyping ? <TypingIndicator content="Skillbot is typing" /> : null}
+              typingIndicator={isTyping ? <TypingIndicator content="Skillbot sedang mengetik" /> : null}
             >
               {messages.map((message, i) => {
                 console.log(message)
