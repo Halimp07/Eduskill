@@ -1,12 +1,11 @@
 import { useState } from 'react'
-import '../../../App.css'
 import '@chatscope/chat-ui-kit-styles/dist/default/styles.min.css';
 import { MainContainer, ChatContainer, MessageList, Message, MessageInput, TypingIndicator } from '@chatscope/chat-ui-kit-react';
 
-const API_KEY = "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";
+const API_KEY = "";
 // "Explain things like you would to a 10 year old learning how to code."
-const systemMessage = { //  Explain things like you're talking to a software professional with 5 years of experience.
-  "role": "system", "content": "Explain things like you're talking to a software professional with 2 years of experience."
+const systemMessage = {
+  "role": "system", "content": "Jelaskan hal-hal seperti Anda sedang berbicara dengan seorang dengan banyak pengalaman."
 }
 
 function AiEduskill() {
@@ -84,20 +83,20 @@ function AiEduskill() {
   }
 
   return (
-    <div className="App">
-      <div className='relative h-[600px] w-full'>
+    <div className="">
+      <div className='relative h-[600px] w-full '>
         <MainContainer>
           <ChatContainer>       
             <MessageList 
               scrollBehavior="smooth" 
-              typingIndicator={isTyping ? <TypingIndicator content="ChatGPT is typing" /> : null}
+              typingIndicator={isTyping ? <TypingIndicator content="Skillbot is typing" /> : null}
             >
               {messages.map((message, i) => {
                 console.log(message)
                 return <Message key={i} model={message} />
               })}
             </MessageList>
-            <MessageInput placeholder="Type message here" onSend={handleSend} />        
+            <MessageInput placeholder="Tuliskan Pertanyaan mu disini..." onSend={handleSend} />        
           </ChatContainer>
         </MainContainer>
       </div>

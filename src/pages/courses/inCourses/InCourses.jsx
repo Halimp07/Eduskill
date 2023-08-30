@@ -4,6 +4,7 @@ import { classEdu } from "../../../Data";
 import VideoComponent from "./VideoComponent";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
+import { AiEduskill } from "../../../index"; // Adjust the import paths accordingly
 
 const InCourses = () => {
   const { namelink } = useParams();
@@ -62,6 +63,7 @@ const InCourses = () => {
       </div>
       <div className="mt-10">
 
+      <AiEduskill />
       </div>
     </div>
   );
