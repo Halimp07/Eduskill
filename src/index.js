@@ -7,6 +7,5 @@ import Footer from "./components/footer/footer";
 import Navbar from "./components/navbar/Navbar";
 import Courses from "./pages/courses/Courses"
 import InCourses from "./pages/courses/inCourses/InCourses";
-import AiEduskill from "./pages/courses/inCourses/AiEduskill";
 
-export { Navbar, Home, Services, Classes, Teacher, Review, Footer, Courses, InCourses, AiEduskill };
+export { Navbar, Home, Services, Classes, Teacher, Review, Footer, Courses, InCourses };

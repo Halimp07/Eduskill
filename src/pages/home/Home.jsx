@@ -157,13 +157,13 @@ const Home = () => {
         </div>
       </div>
 
-      <div class="flex flex-col pt-6 md:flex-row items-center justify-center md:justify-start">
+      <div className="flex flex-col pt-6 md:flex-row items-center justify-center md:justify-start">
         <div
           data-aos="fade-down"
-          class="md:mt-0 mr-0 md:mr-16 text-center md:text-left mb-4 md:mb-0"
+          className="md:mt-0 mr-0 md:mr-16 text-center md:text-left mb-4 md:mb-0"
         >
-          <p class="font-bold text-2xl md:text-xl text-Orange_Primary">10+</p>
-          <p class="text-2xl md:text-xl">Collaborations</p>
+          <p className="font-bold text-2xl md:text-xl text-Orange_Primary">10+</p>
+          <p className="text-2xl md:text-xl">Collaborations</p>
         </div>
         <div className="flex items-center justify-center md:justify-center flex-wrap gap-16 pt-4 md:pt-0">
           {logos.map((logo, index) => (
