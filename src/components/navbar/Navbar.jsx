@@ -30,7 +30,6 @@ const Navbar = ({ isActive, setActiveLink }) => {
             active ? "py-2 transition-all duration-300" : "py-4"
           } container mx-auto flex items-center justify-between px-2`}
         >
-         
           <div className="flex items-center gap-4">
             <img
               src={eduskill}
@@ -42,9 +41,7 @@ const Navbar = ({ isActive, setActiveLink }) => {
             <div className="sm:flex hidden font-normal text-sm mr-4">
               {navLinks.map((link) => (
                 <li
-                  className={`list-none cursor-pointer mx-4 ${
-                    isActive ? "hover:text-red-500" : "hover:text-blue-500"
-                  }`}
+                  className={`list-none cursor-pointer mx-4`}
                   key={link.id}
                 >
                   <Link
@@ -69,31 +66,32 @@ const Navbar = ({ isActive, setActiveLink }) => {
                 Daftar Kelas
               </button>
             </div>
-          <div className="flex items-center md:mx-0 mx-2">
-            <HiMenuAlt1
-              className="text-3xl sm:hidden cursor-pointer rotate-180"
-              onClick={() => setToggle(true)}
-            />
-          </div>
+            <div className="flex items-center md:mx-0 mx-2">
+              <HiMenuAlt1
+                className="text-3xl sm:hidden cursor-pointer rotate-180"
+                onClick={() => setToggle(true)}
+              />
+            </div>
           </div>
           {toggle && (
             <motion.div
               initial={{ x: -500, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.3 }}
-              className="fixed h-full w-96 top-0 left-0 z-20 bg-Orange_Primary text-white flex flex-col justify-center items-center shadow-lg gap-8 py-8"
+              className="fixed h-full w-full top-0 left-0 z-20 bg-Orange_Primary flex flex-col justify-center items-center shadow-lg gap-8 py-8"
             >
               {navLinks.map((link) => (
-                <MobileNavLinks
-                  key={link.id}
-                  {...link}
-                  toggle={toggle} // Pass the toggle prop here
-                  setToggle={setToggle}
-                />
+             <MobileNavLinks
+             key={link.id}
+             href={link.href}
+             link={link.link}
+             isActive={isActive}
+             setActiveLink={setActiveLink} // Make sure to pass the function
+           />
               ))}
 
               <HiX
-                className="absolute right-12 top-12 text-3xl cursor-pointer"
+                className="absolute right-12 top-12 text-white text-3xl cursor-pointer"
                 onClick={(prev) => setToggle(!prev)}
               />
             </motion.div>
