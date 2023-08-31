@@ -108,7 +108,7 @@ const Footer = () => {
         {/* Social Media Icons */}
         <div className="flex justify-between gap-4 mt-5 text-[#98A2B3]">
           <div className="text-sm">
-            <p>&copy; 2023 DUSKULL</p>
+            <p>&copy; 2023 EDUSKiLL</p>
           </div>
           <div className="flex gap-4 md:mr-10">
             <a href="" className="hover:scale-110 text-xl">
