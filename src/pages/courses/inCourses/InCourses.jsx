@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { classEdu } from "../../../Data";
 import VideoComponent from "./VideoComponent";
@@ -16,6 +16,27 @@ const InCourses = () => {
 
   const videoId = course.video && course.video.match(/v=([^&]+)/)[1];
   const embedUrl = videoId ? `https://www.youtube.com/embed/${videoId}` : null;
+
+  useEffect(() => {
+    // Insert your script here
+    (function (w, d, s, o, f, js, fjs) {
+      w["botsonic_widget"] = o;
+      w[o] =
+        w[o] ||
+        function () {
+          (w[o].q = w[o].q || []).push(arguments);
+        };
+      (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
+      js.id = o;
+      js.src = f;
+      js.async = 1;
+      fjs.parentNode.insertBefore(js, fjs);
+    })(window, document, "script", "Botsonic", "https://widget.writesonic.com/CDN/botsonic.min.js");
+    Botsonic("init", {
+      serviceBaseUrl: "https://api.botsonic.ai",
+      token: "e41575b1-8cb7-4f99-8388-943cacdd8d70",
+    });
+  }, []); 
 
   return (
     <div
