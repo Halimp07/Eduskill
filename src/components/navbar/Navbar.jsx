@@ -40,10 +40,7 @@ const Navbar = ({ isActive, setActiveLink }) => {
           <div className="container mx-auto flex items-center justify-end">
             <div className="sm:flex hidden font-normal text-sm mr-4">
               {navLinks.map((link) => (
-                <li
-                  className={`list-none cursor-pointer mx-4`}
-                  key={link.id}
-                >
+                <li className={`list-none cursor-pointer mx-4`} key={link.id}>
                   <Link
                     to={link.href}
                     className={`font-bold transition-all duration-300 ${
@@ -80,19 +77,10 @@ const Navbar = ({ isActive, setActiveLink }) => {
               transition={{ duration: 0.3 }}
               className="fixed h-full w-full top-0 left-0 z-20 bg-Orange_Primary flex flex-col justify-center items-center shadow-lg gap-8 py-8"
             >
-              {navLinks.map((link) => (
-             <MobileNavLinks
-             key={link.id}
-             href={link.href}
-             link={link.link}
-             isActive={isActive}
-             setActiveLink={setActiveLink} // Make sure to pass the function
-           />
-              ))}
-
+              <MobileNavLinks />
               <HiX
                 className="absolute right-12 top-12 text-white text-3xl cursor-pointer"
-                onClick={(prev) => setToggle(!prev)}
+                onClick={() => setToggle(false)}
               />
             </motion.div>
           )}
