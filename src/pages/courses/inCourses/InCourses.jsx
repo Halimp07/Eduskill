@@ -19,11 +19,11 @@ const InCourses = () => {
 
   useEffect(() => {
     // Insert your script here
-    (function(w, d, s, o, f, js, fjs) {
+    (function (w, d, s, o, f, js, fjs) {
       w["botsonic_widget"] = o;
       w[o] =
         w[o] ||
-        function() {
+        function () {
           (w[o].q = w[o].q || []).push(arguments);
         };
       (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
@@ -58,30 +58,60 @@ const InCourses = () => {
 
   const [activeDot, setActiveDot] = useState(0);
   const [leftChevronClicked, setLeftChevronClicked] = useState(false);
-  const [rightChevronClicked, setRightChevronClicked] = useState(true); // Initially set to true
+  const [rightChevronClicked, setRightChevronClicked] = useState(false); // Initially set to false
+  const [leftChevronColor, setLeftChevronColor] = useState(
+    "bg-[#F1F1F1] text-black"
+  );
+  const [rightChevronColor, setRightChevronColor] = useState(
+    "bg-Orange_Primary text-white"
+  );
 
   const renderRxDotFilledIcons = () => {
     const icons = [];
+    const iconColor = "text-[#F1F1F1]"; // Default color
     for (let i = 0; i < 5; i++) {
       const isActive = i === activeDot;
-      const iconColor = isActive ? "text-Orange_Primary" : "text-[#F1F1F1]";
-      icons.push(
-        <RxDotFilled
-          key={i}
-          className={`w-5 h-5 ${iconColor}`}
-          onClick={() => handleDotClick(i)}
-        />
-      );
+      if (isActive) {
+        icons.push(
+          <RxDotFilled
+            key={i}
+            className={`w-5 h-5 text-Orange_Primary`}
+            onClick={() => handleDotClick(i)}
+          />
+        );
+      } else {
+        icons.push(
+          <RxDotFilled
+            key={i}
+            className={`w-5 h-5 ${iconColor}`}
+            onClick={() => handleDotClick(i)}
+          />
+        );
+      }
     }
     return icons;
   };
-  const leftChevronColor = leftChevronClicked
-    ? "bg-[#F1F1F1] text-black"
-    : "bg-Orange_Primary text-white";
 
-  const rightChevronColor = rightChevronClicked
-    ? "bg-Orange_Primary text-white"
-    : "bg-[#F1F1F1] text-black";
+  const handleLeftChevronClick = () => {
+    setLeftChevronClicked(true);
+    setRightChevronClicked(false);
+    setLeftChevronColor("bg-Orange_Primary text-white");
+    setRightChevronColor("bg-[#F1F1F1] text-black");
+
+    // Update the activeDot state to go to the previous dot
+    setActiveDot((prevDot) => (prevDot === 0 ? 4 : prevDot - 1));
+  };
+
+  const handleRightChevronClick = () => {
+    setRightChevronClicked(true);
+    setLeftChevronClicked(false);
+    setRightChevronColor("bg-Orange_Primary text-white");
+    setLeftChevronColor("bg-[#F1F1F1] text-black");
+
+    // Update the activeDot state to go to the next dot
+    setActiveDot((prevDot) => (prevDot === 4 ? 0 : prevDot + 1));
+  };
+
   return (
     <div
       className="md:section container mx-auto pt-24 pb-24 px-6"
@@ -105,7 +135,7 @@ const InCourses = () => {
           <div className="relative flex items-center">
             <div
               className={`right-0 w-16 h-8 rounded-2xl flex items-center justify-start ${leftChevronColor}`}
-              onClick={handlePrevDot}
+              onClick={handleLeftChevronClick}
               onMouseDown={() => setLeftChevronClicked(true)}
               onMouseUp={() => setLeftChevronClicked(false)}
               onMouseLeave={() => setLeftChevronClicked(false)}
@@ -114,7 +144,7 @@ const InCourses = () => {
             </div>
             <div
               className={`absolute right-0 w-8 h-8 rounded-2xl flex items-center justify-center ${rightChevronColor}`}
-              onClick={handleNextDot}
+              onClick={handleRightChevronClick}
               onMouseDown={() => setRightChevronClicked(true)}
               onMouseUp={() => setRightChevronClicked(false)}
               onMouseLeave={() => setRightChevronClicked(false)}
@@ -135,7 +165,6 @@ const InCourses = () => {
         )}
       </div>
       <div className="mt-10"></div>
-      
     </div>
   );
 };
