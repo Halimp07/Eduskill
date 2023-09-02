@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { RxDotFilled, RxCaretRight, RxBorderSolid } from "react-icons/rx";
 import { motion } from "framer-motion";
 
-import icon1 from "../../../assets/icon_1_eduskill.svg";
-import icon2 from "../../../assets/icon_2_eduskill.svg";
-import icon3 from "../../../assets/icon_3_eduskill.svg";
+import icon1 from "@/assets/icon_1_eduskill.svg";
+import icon2 from "@/assets/icon_2_eduskill.svg";
+import icon3 from "@/assets/icon_3_eduskill.svg";
 
 function Carousel() {
   const slides = [

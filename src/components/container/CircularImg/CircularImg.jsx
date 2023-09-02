@@ -1,5 +1,5 @@
 import React from "react";
-import { circleTeacher } from "../../../Data"; // Import the circleTeacher data
+import { circleTeacher } from "@/Data"; // Import the circleTeacher data
 
 const CircularImg = () => {
   return (

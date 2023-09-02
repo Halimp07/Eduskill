@@ -1,7 +1,7 @@
 import React from "react";
-// import { accordions } from "../../Data";
+// import { accordions } from "@/Data";
 // import Accordion from "./Accordion";
-import Circular from "../../components/container/CircularImg/CircularImg";
+import Circular from "@/components/container/CircularImg/CircularImg";
 
 const Teacher = () => {
   return (

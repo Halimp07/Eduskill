@@ -1,6 +1,6 @@
 import React from "react";
 import ClassRecom from "./ClassRecom"; // Adjust the path as needed
-import { RecomEdu } from "../../Data";
+import { RecomEdu } from "@/Data";
 
 const Recom = () => {
   return (

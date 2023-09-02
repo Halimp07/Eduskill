@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { RxDotFilled, RxBorderSolid } from "react-icons/rx";
 import { motion } from "framer-motion";
 import Class from "./Class"; // Adjust the path as needed
-import { courses } from "../../../Data";
+import { courses } from "@/Data";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -48,7 +48,7 @@ const Classes = () => {
         <h1 className="font-semibold text-xl md:text-3xl md:mb-2 ">
           Kelas Popular Kami
         </h1>
-        <p className="font-normal text-base  text-[#667085] ">
+        <p className="font-normal text-sm  text-[#667085] ">
           Mari bergabung dengan kelas terkenal kami, ilmu yang diberikan pasti
           akan bermanfaat bagi Anda.
         </p>

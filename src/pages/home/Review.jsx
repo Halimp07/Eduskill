@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Logo from "../../assets/logo_eduskill.png";
-import { reviewsEdu } from "../../Data"; // Import the reviewsEdu data
+import Logo from "@/assets/logo_eduskill.png";
+import { reviewsEdu } from "@/Data"; // Import the reviewsEdu data
 import { RxDotFilled, RxBorderSolid } from "react-icons/rx";
 
 function Review() {

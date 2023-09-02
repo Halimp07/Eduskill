@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import hero from "../../assets/hero_eduskill.png";
-import { bg_eduskill_1 } from "../../Data";
+import hero from "@/assets/hero_eduskill.png";
+import { bg_eduskill_1 } from "@/Data";
 import {
   logos,
   focus,
@@ -8,9 +8,9 @@ import {
   layers_1,
   layers_2,
   layers_3,
-} from "../../Data";
+} from "@/Data";
 import { motion } from "framer-motion";
-import { Services, Review, Classes, Teacher } from "../../index"; // Adjust the import paths accordingly
+import { Services, Review, Classes, Teacher } from "@/index"; // Adjust the import paths accordingly
 import AOS from "aos";
 import "aos/dist/aos.css";
 

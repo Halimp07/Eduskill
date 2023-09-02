@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { RxDotFilled, RxBorderSolid } from "react-icons/rx";
 import ClassCourse from "./ClassCourse"; // Adjust the path as needed
-import { classEdu } from "../../Data";
+import { classEdu } from "@/Data";
+import Recom from "./Recom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Recom from "./Recom";
 import { Link } from "react-router-dom";
 
 const Courses = () => {

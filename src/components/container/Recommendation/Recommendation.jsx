@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import { RxDotFilled, RxBorderSolid } from "react-icons/rx";
 import { motion } from "framer-motion";
 import Course from "./Course"; // Adjust the path as needed
-import { RecomEdu } from "../../../Data";
+import { RecomEdu } from "@/Data";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 

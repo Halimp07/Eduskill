@@ -7,7 +7,7 @@ import {
   BsDribbble,
 } from "react-icons/bs";
 import { motion } from "framer-motion";
-import Logo from "../../assets/logo_eduskill.png";
+import Logo from "@/assets/logo_eduskill.png";
 
 const Footer = () => {
   return (

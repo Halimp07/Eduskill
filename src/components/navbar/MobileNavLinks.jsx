@@ -1,5 +1,5 @@
 import { Link } from "react-scroll";
-import { navLinks } from "../../Data";
+import { navLinks } from "@/Data";
 import React, { useEffect, useState } from "react";
 import { Link as NavLink, useLocation } from "react-router-dom";
 
