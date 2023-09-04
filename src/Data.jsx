@@ -334,6 +334,8 @@ export const classEdu = [
     year: "2001 Enrolled",
     namelink: "membuat-dashboard",
     video: "https://www.youtube.com/watch?v=z3slaXqmkT0&list=PLFIM0718LjIUHFRMzPJ0wGjx9_NlC5d1h",
+    cover: courses2,
+
   },
   {
     id: 3,
@@ -349,6 +351,8 @@ export const classEdu = [
     heroes: classHero3,
     year: "2001 Enrolled",
     namelink: "belajar-bersama-shoaib",
+    video: "https://www.youtube.com/watch?v=z3slaXqmkT0&list=PLFIM0718LjIUHFRMzPJ0wGjx9_NlC5d1h",
+    cover: courses3,
   },
   {
     id: 4,
@@ -364,6 +368,8 @@ export const classEdu = [
     heroes: classHero4,
     year: "2001 Enrolled",
     namelink: "web-development",
+        video: "https://www.youtube.com/watch?v=z3slaXqmkT0&list=PLFIM0718LjIUHFRMzPJ0wGjx9_NlC5d1h",
+        cover: courses4,
   },
   {
     id: 5,
@@ -380,6 +386,8 @@ export const classEdu = [
     year: "2001 Enrolled",
     discount: "FREE",
     namelink: "dashboard-absensi-online",
+        video: "https://www.youtube.com/watch?v=z3slaXqmkT0&list=PLFIM0718LjIUHFRMzPJ0wGjx9_NlC5d1h",
+        cover: courses5,
   },
   {
     id: 6,
@@ -395,6 +403,8 @@ export const classEdu = [
     heroes: classHero6,
     year: "2001 Enrolled",
     namelink: "membangun-website",
+        video: "https://www.youtube.com/watch?v=z3slaXqmkT0&list=PLFIM0718LjIUHFRMzPJ0wGjx9_NlC5d1h",
+        cover: courses1,
   },
   {
     id: 7,
@@ -410,6 +420,8 @@ export const classEdu = [
     heroes: classHero5,
     year: "2001 Enrolled",
     namelink: "figma-ui-ux-design",
+        video: "https://www.youtube.com/watch?v=z3slaXqmkT0&list=PLFIM0718LjIUHFRMzPJ0wGjx9_NlC5d1h",
+        cover: courses1,
   },
   {
     id: 8,
@@ -425,6 +437,8 @@ export const classEdu = [
     heroes: classHero1,
     year: "2001 Enrolled",
     namelink: "test",
+        video: "https://www.youtube.com/watch?v=z3slaXqmkT0&list=PLFIM0718LjIUHFRMzPJ0wGjx9_NlC5d1h",
+        cover: courses2,
   },
   {
     id: 9,
@@ -440,6 +454,8 @@ export const classEdu = [
     heroes: classHero3,
     year: "2001 Enrolled",
     namelink: "test",
+        video: "https://www.youtube.com/watch?v=z3slaXqmkT0&list=PLFIM0718LjIUHFRMzPJ0wGjx9_NlC5d1h",
+        cover: courses3,
   },
 ];
 
