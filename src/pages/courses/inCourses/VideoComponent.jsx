@@ -1,6 +1,14 @@
 import React, { useState } from "react";
-import { BsPlayCircle, BsPlayFill, BsChevronLeft, BsBookmark, BsFillBookmarkFill } from "react-icons/bs";
+import {
+  BsPlayCircle,
+  BsPlayFill,
+  BsChevronLeft,
+  BsBookmark,
+  BsFillBookmarkFill,
+  BsCardText,
+} from "react-icons/bs";
 import { FaRegShareSquare } from "react-icons/fa";
+import { BiVolumeFull } from "react-icons/bi";
 
 const VideoComponent = ({ videoUrl, cover }) => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -26,6 +34,7 @@ const VideoComponent = ({ videoUrl, cover }) => {
     setCurrentTime(videoElement.currentTime);
   };
 
+
   return (
     <div>
       <div className="video-container relative">
@@ -41,11 +50,18 @@ const VideoComponent = ({ videoUrl, cover }) => {
           ></iframe>
         ) : (
           <div className="relative">
-            <img src={cover} alt="Video Cover" className="rounded-2xl w-full h-[407px] object-cover" />
+            <img
+              src={cover}
+              alt="Video Cover"
+              className="rounded-2xl w-full h-[407px] object-cover"
+            />
             <div className="absolute top-2 left-0 my-5 ml-6">
               <BsChevronLeft className="w-8 h-8 text-white" />
             </div>
-            <div className="absolute top-2 right-0 my-5 mr-6 cursor-pointer" onClick={toggleBookmark}>
+            <div
+              className="absolute top-2 right-0 my-5 mr-6 cursor-pointer"
+              onClick={toggleBookmark}
+            >
               {isBookmarked ? (
                 <BsFillBookmarkFill className="w-8 h-8 text-white" />
               ) : (
@@ -54,20 +70,36 @@ const VideoComponent = ({ videoUrl, cover }) => {
             </div>
 
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-              <BsPlayCircle className="w-16 h-16 text-white hover:text-Orange_Primary cursor-pointer" onClick={togglePlay}/>
+              <BsPlayCircle
+                className="w-16 h-16 text-white hover:text-Orange_Primary cursor-pointer"
+                onClick={togglePlay}
+              />
             </div>
-            <div className="absolute flex space-x-5 items-center left-0 bottom-4 ml-6">
-              <div className="text-white">
-                {Math.floor(currentTime / 60)}:{Math.floor(currentTime % 60).toString().padStart(2, "0")}
-                &nbsp;/&nbsp;
-                {Math.floor(duration / 60)}:{Math.floor(duration % 60).toString().padStart(2, "0")}
+
+            <div className="absolute left-0 right-0 mx-48 bottom-4 rounded-lg">
+              <div
+                className="h-2 my-2 rounded-lg  bg-Orange_Primary"
+              ></div>
+            </div>
+              <div className="absolute bottom-4 left-0 ml-6 flex space-x-5 items-center text-white">
+                <div className="text-md">
+                  {Math.floor(currentTime / 60)}:
+                  {Math.floor(currentTime % 60)
+                    .toString()
+                    .padStart(2, "0")}
+                  &nbsp;/&nbsp;
+                  {Math.floor(duration / 60)}:
+                  {Math.floor(duration % 60)
+                    .toString()
+                    .padStart(2, "0")}
+                </div>
+                <BsPlayFill className="w-6 h-6" />
               </div>
-              <BsPlayFill className="text-white w-8 h-8" />
-            </div>
-            <div className="absolute flex space-x-5 items-center right-0 bottom-4 mr-6">
-              <FaRegShareSquare className="text-white w-5 h-5" />
-            </div>
-            
+              <div className="absolute right-0 bottom-4 mr-6 flex space-x-6  text-white">
+                <BiVolumeFull className="w-6 h-6" />
+                <BsCardText className="w-6 h-6" />
+                <FaRegShareSquare className="w-6 h-6" />
+              </div>
           </div>
         )}
       </div>

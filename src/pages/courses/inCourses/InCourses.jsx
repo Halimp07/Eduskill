@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { classEdu } from "@/Data";
+import { classEdu, learn, videoLearn } from "@/Data";
 import VideoComponent from "./VideoComponent";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
@@ -75,7 +75,7 @@ const InCourses = () => {
         icons.push(
           <RxDotFilled
             key={i}
-            className={`w-5 h-5 text-Orange_Primary`}
+            className={`w-6 h-6 text-Orange_Primary`}
             onClick={() => handleDotClick(i)}
           />
         );
@@ -83,7 +83,7 @@ const InCourses = () => {
         icons.push(
           <RxDotFilled
             key={i}
-            className={`w-5 h-5 ${iconColor}`}
+            className={`w-6 h-6 ${iconColor}`}
             onClick={() => handleDotClick(i)}
           />
         );
@@ -125,14 +125,14 @@ const InCourses = () => {
           {course.title}
         </h1>
         <div className="relative flex items-center">
-          <div className="items-center justify-start ">
+          <div className="justify-start">
             <p className="font-normal text-sm text-[#667085]">
               Mari bergabung dengan kelas terkenal kami, ilmu yang diberikan
               pasti akan bermanfaat bagi Anda.
             </p>
           </div>
-          <div className="flex ml-auto">{renderRxDotFilledIcons()}</div>
-          <div className="relative flex items-center">
+          <div className="flex  ml-auto mx-2 -space-x-3">{renderRxDotFilledIcons()}</div>
+          <div className="relative flex">
             <div
               className={`right-0 w-16 h-8 rounded-2xl flex items-center justify-start ${leftChevronColor}`}
               onClick={handleLeftChevronClick}
@@ -164,7 +164,54 @@ const InCourses = () => {
           <div>No video available for this course.</div>
         )}
       </div>
-      <div className="mt-10"></div>
+
+      <div className="flex mt-14">
+    <div className="text-left flex-grow">
+      <h3 className="text-xl font-semibold text-[#333333]">
+        Rekomendasi Pembelajaran Lainnya
+      </h3>
+
+      <div className="flex flex-grow  space-x-3">
+        {learn.map((item) => {
+          return (
+            <div key={item.id}>
+              <img
+                className="w-[240px] h-[145px]"
+                src={item.image}
+                alt={item.title}
+              />
+              <h3 className="font-semibold text-sm text-[#868686]">
+                {item.title}
+              </h3>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+
+    <div className="text-left">
+      <h3 className="text-xl font-semibold text-[#333333]">Pembelajaran</h3>
+      {videoLearn.map((item) => (
+        <div key={item.id} className="flex items-center my-3">
+          <div className="text-3xl font-medium text-Orange_Primary mx-4">
+            {item.icons} 
+          </div>
+          <div className="ml-2 mr-10">
+            <h3 className="text-sm font-medium text-black opacity-60">
+              {item.title}
+            </h3>
+            <h3 className="text-mini font-medium text-black opacity-50 mt-1">
+              {item.subtitle}
+            </h3>
+          </div>
+        </div>
+      ))}
+    </div>
+
+       
+
+        
+      </div>
     </div>
   );
 };

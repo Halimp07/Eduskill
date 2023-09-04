@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import { RxDotFilled, RxBorderSolid } from "react-icons/rx";
 import { motion } from "framer-motion";
 import Course from "./Course"; // Adjust the path as needed
-import { RecomEdu } from "@/Data";
+import { recomEdu } from "@/Data";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -12,7 +12,7 @@ const Recommendation = () => {
 
   const coursesPerSlide =
     window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1; // Number of courses to show per slide
-  const totalCourses = RecomEdu.length;
+  const totalCourses = recomEdu.length;
 
   const goToSlide = (slideIndex) => {
     setActiveIndex(slideIndex);
@@ -36,7 +36,7 @@ const Recommendation = () => {
     visibleCourses.length < coursesPerSlide;
     i = (i + 1) % totalCourses
   ) {
-    visibleCourses.push(RecomEdu[i]);
+    visibleCourses.push(recomEdu[i]);
   }
 
   return (
@@ -55,16 +55,16 @@ const Recommendation = () => {
       </div>
       <div className="mt-4 overflow-x-hidden w-full relative">
         <Slider {...sliderSettings}>
-          {visibleCourses.map((RecomEdu, index) => (
-            <div key={RecomEdu.id}>
-              <Course {...RecomEdu} />
+          {visibleCourses.map((recomEdu, index) => (
+            <div key={recomEdu.id}>
+              <Course {...recomEdu} />
             </div>
           ))}
         </Slider>
         <div className="flex justify-center items-center mt-4">
-          {RecomEdu.map((RecomEdu, slideIndex) => (
+          {recomEdu.map((recomEdu, slideIndex) => (
             <div
-              key={RecomEdu.id}
+              key={recomEdu.id}
               onClick={() => goToSlide(slideIndex)}
               className={`cursor-pointer transition-transform transform ${
                 slideIndex === activeIndex ? "active" : ""

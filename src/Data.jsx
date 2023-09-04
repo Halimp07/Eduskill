@@ -3,6 +3,7 @@ import { FaLaptopCode } from "react-icons/fa";
 import { BsBarChartLine } from "react-icons/bs";
 import { MdOutlineScience } from "react-icons/md";
 import { AiOutlineTwitter, AiFillLinkedin } from "react-icons/ai";
+import { BsPlayCircle } from "react-icons/bs";
 
 // Course
 import courses1 from "./assets/courses1.png";
@@ -75,6 +76,11 @@ import recomHero3 from "./assets/pages/CoursesHero/recomHero3.png";
 
 // Cover Video
 import cover1 from "./assets/pages/CoverVideo/cover1.png";
+
+// Recom learn 
+import learn1 from "./assets/pages/Learn/learn1.png";
+import learn2 from "./assets/pages/Learn/learn2.png";
+import learn3 from "./assets/pages/Learn/learn3.png";
 
 // Export navLinks for link href
 export const navLinks = [
@@ -438,7 +444,7 @@ export const classEdu = [
 ];
 
 // Recom Section of Course.jsx
-export const RecomEdu = [
+export const recomEdu = [
   {
     id: 1,
     image: recom1,
@@ -483,3 +489,49 @@ export const RecomEdu = [
   },
 ];
 
+// Learn
+export const learn = [
+  {
+    id: 1,
+    image: learn1,
+    title: "1. Pengenalan Figma..",
+    namelink: "test",
+  },
+  {
+    id: 2,
+    image: learn2,
+    title: "2. Membuat pengatu..",
+    namelink: "test",
+  },
+  {
+    id: 3,
+    image: learn3,
+    title: "3. Whiteboard Figma..",
+    namelink: "test",
+  },
+];
+
+// export Video Learn
+export const videoLearn = [
+  {
+    id: 1,
+    icons: [<BsPlayCircle />], // Add the icons here
+    title: "Menggunakan Tool figma",
+    subtitle: "by Ardan fixaxi",
+    namelink: "test",
+  },
+  {
+    id: 2,
+    icons: [<BsPlayCircle />], // Add the icons here
+    title: "Memulai desain pada fi..",
+    subtitle: "by Gilang Ari",
+    namelink: "test",
+  },
+  {
+    id: 3,
+    icons: [<BsPlayCircle />], // Add the icons here
+    title: "Kolaborasi desain den..",
+    subtitle: "by Indana Zulfinata",
+    namelink: "test",
+  },
+];

@@ -1,7 +1,7 @@
 import React from "react";
 import { AiFillStar, AiOutlineArrowUp } from "react-icons/ai";
 
-const ClassCourse = ({
+const ClassCourses = ({
   image,
   category,
   title,
@@ -71,4 +71,4 @@ const ClassCourse = ({
   );
 };
 
-export default ClassCourse;
+export default ClassCourses;

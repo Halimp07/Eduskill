@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { RxDotFilled, RxBorderSolid } from "react-icons/rx";
-import ClassCourse from "./ClassCourse"; // Adjust the path as needed
+import ClassCourses from "./ClassCourses"; // Adjust the path as needed
 import { classEdu } from "@/Data";
 import Recom from "./Recom";
 import "slick-carousel/slick/slick.css";
@@ -42,8 +42,8 @@ const Courses = () => {
         {visibleCourses.map((course, index) => (
           <div key={course.id}>
             <Link to={`/courses/${course.namelink}`}>
-              {/* Use the ClassCourse component or customize as needed */}
-              <ClassCourse {...course} />
+              {/* Use the ClassCourses component or customize as needed */}
+              <ClassCourses {...course} />
             </Link>
           </div>
         ))}
