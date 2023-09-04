@@ -196,7 +196,7 @@ const InCourses = () => {
           <div className="text-3xl font-medium text-Orange_Primary mx-4">
             {item.icons} 
           </div>
-          <div className="ml-2 mr-10">
+          <div className="ml-2 mr-5">
             <h3 className="text-sm font-medium text-black opacity-60">
               {item.title}
             </h3>
