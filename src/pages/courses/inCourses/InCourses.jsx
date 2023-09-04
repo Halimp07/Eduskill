@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate  } from "react-router-dom";
 import { classEdu, learn, videoLearn } from "@/Data";
 import VideoComponent from "./VideoComponent";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
+import Test from "./Test";
+
 
 const InCourses = () => {
   const { namelink } = useParams();
+  const navigate = useNavigate();
 
   const course = classEdu.find((course) => course.namelink === namelink);
 
@@ -100,6 +103,7 @@ const InCourses = () => {
 
     // Update the activeDot state to go to the previous dot
     setActiveDot((prevDot) => (prevDot === 0 ? 4 : prevDot - 1));
+    navigate("/courses/namelink");
   };
 
   const handleRightChevronClick = () => {
@@ -110,6 +114,7 @@ const InCourses = () => {
 
     // Update the activeDot state to go to the next dot
     setActiveDot((prevDot) => (prevDot === 4 ? 0 : prevDot + 1));
+    navigate("/courses/namelink/test");
   };
 
   return (
