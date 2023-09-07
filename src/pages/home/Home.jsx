@@ -44,15 +44,15 @@ const Home = () => {
 
   return (
     <div className="md:section container mx-auto pt-12 pb-24 px-6" id="home">
-      <img
-        data-aos="zoom-in"
-        src={bg_eduskill_1}
-        alt=""
-        className="absolute bg-no-repeat z-0 bottom-0 w-[20rem] top-14 left-0 right-0 lg:w-[25rem] lg:top-20 lg:left-24 lg:right-0 md:w-[25rem] md:top-20 md:left-24 md:right-0"
-      />
       <div className="md:flex items-center justify-center relative">
         {/* First Column */}
         <div className="md:w-1/2 mt-28 md:mb-32 relative z-10">
+        <img
+        data-aos="zoom-in"
+        src={bg_eduskill_1}
+        alt=""
+        className="absolute bg-no-repeat z-0 bottom-0 w-[20rem] top-0 -left-16 -top-28 lg:w-[25rem] lg:top-0 lg:-left-28 md:w-[25rem] md:top-0 md:-top-32 md:-left-24"
+      />
           <div
             data-aos="fade-right"
             data-aos-delay="300"
