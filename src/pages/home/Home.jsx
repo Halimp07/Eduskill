@@ -51,7 +51,7 @@ const Home = () => {
         data-aos="zoom-in"
         src={bg_eduskill_1}
         alt=""
-        className="absolute bg-no-repeat z-0 bottom-0 w-[20rem] top-0 -left-16 -top-28 lg:w-[25rem] lg:top-0 lg:-left-28 md:w-[25rem] md:top-0 md:-top-32 md:-left-24"
+        className="absolute bg-no-repeat z-0 bottom-0 w-[20rem] -left-16 -top-28 lg:w-[25rem] lg:top-0 lg:-left-28 md:w-[25rem] md:-top-32 md:-left-24"
       />
           <div
             data-aos="fade-right"
