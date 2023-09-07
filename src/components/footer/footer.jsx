@@ -17,7 +17,7 @@ const Footer = () => {
       transition={{ duration: 1 }}
       className="bg-Black_Primary p-10"
     >
-      <div className="md:mr-28 md:ml-28 ml-0 mr-0">
+      <div className="md:section container mx-auto pt-12 pb-24 px-6">
         <div className="grid md:grid-cols-6 sm:grid-cols-3 xs:grid-cols-2 grid-cols-1 place-items-start gap-8 text-White_Primary">
           <div className="col-span-2">
             <img

@@ -2,15 +2,12 @@ import React from "react";
 
 const Test = () => {
   return (
-    <div
-      className="md:section container mx-auto pt-24 pb-24 px-6"
-      id="test"
-    >
+    <div className="md:section container mx-auto pt-24 pb-24 px-6" id="test">
       <div className="text-start">
         <p className="font-semibold text-sm mb-2 md:text-sm md:mb-2 text-Orange_Primary">
           Test Pembelajaran
         </p>
-        <h1 className="font-semibold text-xl md:text-3xl md:mb-2 ">
+        <h1 className="font-semibold text-xl md:text-3xl md:mb-2">
           Mengenal HTML CSS untuk Pemula
         </h1>
         <div className="relative flex items-center">
@@ -20,6 +17,14 @@ const Test = () => {
               bermanfaat...
             </p>
           </div>
+        </div>
+      </div>
+      <div className="mt-7">
+        <h1 className="font-medium text-xl md:text-2xl text-[#333333] ">
+          Tugas Saya
+        </h1>
+        <div className="">
+          <h3>Buatlah Kata “Hello World”</h3>
         </div>
       </div>
     </div>

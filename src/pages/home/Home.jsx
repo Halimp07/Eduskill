@@ -43,7 +43,7 @@ const Home = () => {
   // const selectedItem = focus.find((item) => item.id === selectedId);
 
   return (
-    <div className="md:section container mx-auto pt-12 pb-24 px-6 " id="home">
+    <div className="md:section container mx-auto pt-12 pb-24 px-6" id="home">
       <img
         data-aos="zoom-in"
         src={bg_eduskill_1}
