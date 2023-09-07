@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { useParams, useNavigate  } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { classEdu, learn, videoLearn } from "@/Data";
 import VideoComponent from "./VideoComponent";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
 import Test from "./Test";
-
 
 const InCourses = () => {
   const { namelink } = useParams();
@@ -103,7 +102,8 @@ const InCourses = () => {
 
     // Update the activeDot state to go to the previous dot
     setActiveDot((prevDot) => (prevDot === 0 ? 4 : prevDot - 1));
-    navigate("/courses/namelink");
+    // Change this line
+    navigate(`/courses/${namelink}`);
   };
 
   const handleRightChevronClick = () => {
@@ -114,7 +114,8 @@ const InCourses = () => {
 
     // Update the activeDot state to go to the next dot
     setActiveDot((prevDot) => (prevDot === 4 ? 0 : prevDot + 1));
-    navigate("/courses/namelink/test");
+    // Change this line
+    navigate(`/courses/${namelink}/test`);
   };
 
   return (
@@ -136,7 +137,9 @@ const InCourses = () => {
               pasti akan bermanfaat bagi Anda.
             </p>
           </div>
-          <div className="flex  ml-auto mx-2 -space-x-3">{renderRxDotFilledIcons()}</div>
+          <div className="flex  ml-auto mx-2 -space-x-3">
+            {renderRxDotFilledIcons()}
+          </div>
           <div className="relative flex">
             <div
               className={`right-0 w-16 h-8 rounded-2xl flex items-center justify-start ${leftChevronColor}`}
@@ -171,51 +174,47 @@ const InCourses = () => {
       </div>
 
       <div className="flex mt-14">
-    <div className="text-left flex-grow">
-      <h3 className="text-xl font-semibold text-[#333333]">
-        Rekomendasi Pembelajaran Lainnya
-      </h3>
+        <div className="text-left flex-grow">
+          <h3 className="text-xl font-semibold text-[#333333]">
+            Rekomendasi Pembelajaran Lainnya
+          </h3>
 
-      <div className="flex flex-grow  space-x-3">
-        {learn.map((item) => {
-          return (
-            <div key={item.id}>
-              <img
-                className="w-[240px] h-[145px]"
-                src={item.image}
-                alt={item.title}
-              />
-              <h3 className="font-semibold text-sm text-[#868686]">
-                {item.title}
-              </h3>
-            </div>
-          );
-        })}
-      </div>
-    </div>
-
-    <div className="text-left">
-      <h3 className="text-xl font-semibold text-[#333333]">Pembelajaran</h3>
-      {videoLearn.map((item) => (
-        <div key={item.id} className="flex items-center my-3">
-          <div className="text-3xl font-medium text-Orange_Primary mx-4">
-            {item.icons} 
-          </div>
-          <div className="ml-2 mr-5">
-            <h3 className="text-sm font-medium text-black opacity-60">
-              {item.title}
-            </h3>
-            <h3 className="text-mini font-medium text-black opacity-50 mt-1">
-              {item.subtitle}
-            </h3>
+          <div className="flex flex-grow  space-x-3">
+            {learn.map((item) => {
+              return (
+                <div key={item.id}>
+                  <img
+                    className="w-[240px] h-[145px]"
+                    src={item.image}
+                    alt={item.title}
+                  />
+                  <h3 className="font-semibold text-sm text-[#868686]">
+                    {item.title}
+                  </h3>
+                </div>
+              );
+            })}
           </div>
         </div>
-      ))}
-    </div>
 
-       
-
-        
+        <div className="text-left">
+          <h3 className="text-xl font-semibold text-[#333333]">Pembelajaran</h3>
+          {videoLearn.map((item) => (
+            <div key={item.id} className="flex items-center my-3">
+              <div className="text-3xl font-medium text-Orange_Primary mx-4">
+                {item.icons}
+              </div>
+              <div className="ml-2 mr-5">
+                <h3 className="text-sm font-medium text-black opacity-60">
+                  {item.title}
+                </h3>
+                <h3 className="text-mini font-medium text-black opacity-50 mt-1">
+                  {item.subtitle}
+                </h3>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -1,9 +1,8 @@
+import { BsBarChartLine, BsPlayCircle, BsCircle } from "react-icons/bs";
 import { FiPenTool } from "react-icons/fi";
 import { FaLaptopCode } from "react-icons/fa";
-import { BsBarChartLine } from "react-icons/bs";
 import { MdOutlineScience } from "react-icons/md";
 import { AiOutlineTwitter, AiFillLinkedin } from "react-icons/ai";
-import { BsPlayCircle } from "react-icons/bs";
 
 // Course
 import courses1 from "./assets/courses1.png";
@@ -534,7 +533,7 @@ export const videoLearn = [
     icons: [<BsPlayCircle />], // Add the icons here
     title: "Menggunakan Tool figma",
     subtitle: "by Ardan fixaxi",
-    namelink: "test",
+    namelink: "learn",
   },
   {
     id: 2,
@@ -551,3 +550,50 @@ export const videoLearn = [
     namelink: "test",
   },
 ];
+
+
+export const taskLearn = [
+  {
+    id: 1,
+    items: [
+      {
+        icons: [<BsCircle />], // Add the icons here
+        title: "Buatlah Kata “Hello World”",
+        subtitle: "by Indana Zulfinata",
+      },
+      {
+        icons: [<BsCircle />], // Add the icons here
+        title: "Buatlah WEB Perkenalan",
+        subtitle: "by Indana Zulfinata",
+      },
+      {
+        icons: [<BsCircle />], // Add the icons here
+        title: "Hiaslah WEB perkenalanmu",
+        subtitle: "by Indana Zulfinata",
+      },
+      {
+        icons: [<BsCircle />], // Add the icons here
+        title: "Berikan animasi sederhana",
+        subtitle: "by Indana Zulfinata",
+      },
+    ],
+  },
+  {
+    id: 2,
+    items: [
+      {
+        icons: [<BsCircle />], // Add the icons here
+        title: "Kolaborasi dengan..",
+        subtitle: "by Indana Zulfinata",
+      },
+      {
+        icons: [<BsCircle />], // Add the icons here
+        title: "Kolaborasi dan..",
+        subtitle: "by Indana Zulfinata",
+      },
+    ],
+  },
+  // Add more objects with different IDs and their respective items
+];
+
+

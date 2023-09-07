@@ -1,6 +1,9 @@
 import React from "react";
+import { taskLearn } from "@/Data"; // Adjust the import path as needed
 
 const Test = () => {
+  const selectedTask = taskLearn.find((task) => task.id === 1);
+
   return (
     <div className="md:section container mx-auto pt-24 pb-24 px-6" id="test">
       <div className="text-start">
@@ -23,8 +26,16 @@ const Test = () => {
         <h1 className="font-medium text-xl md:text-2xl text-[#333333] ">
           Tugas Saya
         </h1>
-        <div className="">
-          <h3>Buatlah Kata “Hello World”</h3>
+        <div>
+          {selectedTask &&
+            selectedTask.items.map((item, index) => (
+              <div key={index}>
+                <h3>{item.icons}</h3>
+                <h3>{item.title}</h3>
+                <h3>{item.subtitle}</h3>
+                {/* Render other elements as needed */}
+              </div>
+            ))}
         </div>
       </div>
     </div>
