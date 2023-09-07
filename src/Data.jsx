@@ -559,40 +559,33 @@ export const taskLearn = [
       {
         icons: [<BsCircle />], // Add the icons here
         title: "Buatlah Kata “Hello World”",
-        subtitle: "by Indana Zulfinata",
+        subtitle: "Perintah dasar",
       },
       {
         icons: [<BsCircle />], // Add the icons here
         title: "Buatlah WEB Perkenalan",
-        subtitle: "by Indana Zulfinata",
+        subtitle: "Berisi nama, ttl, umur, dan asal",
       },
       {
         icons: [<BsCircle />], // Add the icons here
         title: "Hiaslah WEB perkenalanmu",
-        subtitle: "by Indana Zulfinata",
+        subtitle: "Menggunakan CSS",
+      },
+      {
+        icons: [<BsCircle />], // Add the icons here
+        title: "Tambahkan Foto Profil ",
+        subtitle: "Pada Web perkenalanmu",
       },
       {
         icons: [<BsCircle />], // Add the icons here
         title: "Berikan animasi sederhana",
-        subtitle: "by Indana Zulfinata",
+        subtitle: "Pada foto yang ditambahkan",
       },
     ],
+    names: "coba",
+
   },
-  {
-    id: 2,
-    items: [
-      {
-        icons: [<BsCircle />], // Add the icons here
-        title: "Kolaborasi dengan..",
-        subtitle: "by Indana Zulfinata",
-      },
-      {
-        icons: [<BsCircle />], // Add the icons here
-        title: "Kolaborasi dan..",
-        subtitle: "by Indana Zulfinata",
-      },
-    ],
-  },
+  
   // Add more objects with different IDs and their respective items
 ];
 
