@@ -1,49 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { classEdu, learn, videoLearn } from "@/Data";
-import VideoComponent from "./VideoComponent";
+import { taskLearn } from "@/Data";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
+import Compiler from "./Compiler";
 
-const InCourses = () => {
+const Test = () => {
   const { namelink } = useParams();
   const navigate = useNavigate();
-
-  const course = classEdu.find((course) => course.namelink === namelink);
-
-  if (!course) {
-    return <div>Course not found</div>;
-  }
-
-  const videoId = course.video && course.video.match(/v=([^&]+)/)[1];
-  const embedUrl = videoId ? `https://www.youtube.com/embed/${videoId}` : null;
-
-  useEffect(() => {
-    // Insert your script here
-    (function (w, d, s, o, f, js, fjs) {
-      w["botsonic_widget"] = o;
-      w[o] =
-        w[o] ||
-        function () {
-          (w[o].q = w[o].q || []).push(arguments);
-        };
-      (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
-      js.id = o;
-      js.src = f;
-      js.async = 1;
-      fjs.parentNode.insertBefore(js, fjs);
-    })(
-      window,
-      document,
-      "script",
-      "Botsonic",
-      "https://widget.writesonic.com/CDN/botsonic.min.js"
-    );
-    Botsonic("init", {
-      serviceBaseUrl: "https://api.botsonic.ai",
-      token: "e41575b1-8cb7-4f99-8388-943cacdd8d70",
-    });
-  }, []);
 
   const handleDotClick = (index) => {
     setActiveDot(index);
@@ -59,7 +23,7 @@ const InCourses = () => {
 
   const [activeDot, setActiveDot] = useState(0);
   const [leftChevronClicked, setLeftChevronClicked] = useState(false);
-  const [rightChevronClicked, setRightChevronClicked] = useState(false); // Initially set to false
+  const [rightChevronClicked, setRightChevronClicked] = useState(false);
   const [leftChevronColor, setLeftChevronColor] = useState(
     "bg-[#F1F1F1] text-black"
   );
@@ -99,7 +63,6 @@ const InCourses = () => {
     setLeftChevronColor("bg-Orange_Primary text-white");
     setRightChevronColor("bg-[#F1F1F1] text-black");
 
-    // Update the activeDot state to go to the previous dot
     setActiveDot((prevDot) => (prevDot === 0 ? 4 : prevDot - 1));
     navigate("/courses/namelink");
   };
@@ -110,32 +73,27 @@ const InCourses = () => {
     setRightChevronColor("bg-Orange_Primary text-white");
     setLeftChevronColor("bg-[#F1F1F1] text-black");
 
-    // Update the activeDot state to go to the next dot
     setActiveDot((prevDot) => (prevDot === 4 ? 0 : prevDot + 1));
-    // Change this line
     navigate(`/courses/${namelink}/test`);
   };
 
   return (
-    <div
-      className="md:section container mx-auto pt-24 pb-24 px-6"
-      id="incourses"
-    >
+    <div className="md:section container mx-auto pt-24 pb-24 px-6" id="test">
       <div className="text-start">
         <p className="font-semibold text-sm mb-2 md:text-sm md:mb-2 text-Orange_Primary">
-          Jelajahi Kelas
+          Test Pembelajaran
         </p>
-        <h1 className="font-semibold text-xl md:text-3xl md:mb-2 ">
-          {course.title}
+        <h1 className="font-semibold text-xl md:text-3xl md:mb-2">
+          Mengenal HTML CSS untuk Pemula
         </h1>
         <div className="relative flex items-center">
           <div className="justify-start">
             <p className="font-normal text-sm text-[#667085]">
-              Mari bergabung dengan kelas terkenal kami, ilmu yang diberikan
-              pasti akan bermanfaat bagi Anda.
+              Kerjakan tugas dengan benar, ilmu yang diberikan pasti akan
+              bermanfaat...
             </p>
           </div>
-          <div className="flex  ml-auto mx-2 -space-x-3">
+          <div className="flex ml-auto mx-2 -space-x-3">
             {renderRxDotFilledIcons()}
           </div>
           <div className="relative flex">
@@ -161,61 +119,48 @@ const InCourses = () => {
         </div>
       </div>
 
-      <div className="mt-8">
-        {embedUrl ? (
-          <div className="mt-8">
-            <VideoComponent videoUrl={embedUrl} cover={course.cover} />
-          </div>
-        ) : (
-          <div>No video available for this course.</div>
-        )}
-      </div>
+    
 
-      <div className="flex mt-14">
-        <div className="text-left flex-grow">
-          <h3 className="text-xl font-semibold text-[#333333]">
-            Rekomendasi Pembelajaran Lainnya
-          </h3>
-
-          <div className="flex flex-grow  space-x-3">
-            {learn.map((item) => {
-              return (
-                <div key={item.id}>
-                  <img
-                    className="w-[240px] h-[145px]"
-                    src={item.image}
-                    alt={item.title}
-                  />
-                  <h3 className="font-semibold text-sm text-[#868686]">
-                    {item.title}
-                  </h3>
-                </div>
-              );
-            })}
+      <div className="flex mt-7 justify-between">
+        <div className="flex-grow-0"> {/* Add this flex-grow class */}
+          <h1 className="font-semibold text-xl md:text-2xl text-[#333333] ">
+            Tugas Saya
+          </h1>
+          <div className="mt-4">
+            {/* Content on the left */}
+            {taskLearn.map((task) => (
+              <div key={task.id}>
+                {task.items.map((item, index) => (
+                  <div key={index} className="flex">
+                    <div className="flex space-y-3">
+                      <div
+                        className={`flex items-center text-4xl ${
+                          index === 0 ? "text-[#20B486]" : "text-[#FF9B26]"
+                        }`}
+                      >
+                        {item.icons}
+                      </div>
+                      <div className="ml-6">
+                        <h3 className="font-semibold text-[#757575]">
+                          {item.title}
+                        </h3>
+                        <h3 className="mt-1 text-sm text-[#8C8C8C]">
+                          {item.subtitle}
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ))}
           </div>
         </div>
-
-        <div className="text-left">
-          <h3 className="text-xl font-semibold text-[#333333]">Pembelajaran</h3>
-          {videoLearn.map((item) => (
-            <div key={item.id} className="flex items-center my-3">
-              <div className="text-3xl font-medium text-Orange_Primary mx-4">
-                {item.icons}
-              </div>
-              <div className="ml-2 mr-5">
-                <h3 className="text-sm font-medium text-black opacity-60">
-                  {item.title}
-                </h3>
-                <h3 className="text-mini font-medium text-black opacity-50 mt-1">
-                  {item.subtitle}
-                </h3>
-              </div>
-            </div>
-          ))}
+        <div className="flex-grow-0"> {/* Add this flex-shrink-0 class */}
+          <Compiler /> {/* Compiler component on the right */}
         </div>
       </div>
     </div>
   );
 };
 
-export default InCourses;
+export default Test;
