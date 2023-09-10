@@ -1,15 +1,3 @@
 {
-    "version": 2,
-    "name": "Eduskill",
-    "builds": [
-      {
-        "src": "src/**/*",
-        "use": "@now/next",
-        "config": { "zeroConfig": true }
-      }
-    ],
-    "routes": [
-      { "src": "/(.*)", "dest": "/" }
-    ]
-  }
-  
+    "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+}
