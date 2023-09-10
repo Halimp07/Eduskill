@@ -1,3 +1,13 @@
 {
-    "rewrites": [{ "source": "/(.*)", "destination": "/" }]
-}
+    "build": {
+      "env": {
+        "NODE_ENV": "production"
+      },
+      "command": "npm install --legacy-peer-deps && npm run build",
+      "use": "@vercel/node"
+    },
+    "rewrites": [
+      { "source": "/(.*)", "destination": "/" }
+    ]
+  }
+  
