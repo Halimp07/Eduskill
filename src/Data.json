@@ -1,0 +1,355 @@
+{
+    "header": {
+      "logo": "logo.png",
+      "navItems": [
+        {
+          "id": 1,
+          "text": "Home",
+          "link": "/"
+        },
+        {
+          "id": 2,
+          "text": "Courses",
+          "link": "/courses"
+        },
+        {
+          "id": 3,
+          "text": "About",
+          "link": "/about"
+        },
+        {
+          "id": 4,
+          "text": "Contact",
+          "link": "/contact"
+        }
+      ],
+      "ctaText": "Sign Up",
+      "ctaLink": "/signup"
+    },
+    "hero": {
+      "title": "Learn Anything, Anytime, Anywhere",
+      "subtitle": "Join Skillex and explore thousands of online courses",
+      "ctaText": "Explore Courses",
+      "ctaLink": "/courses"
+    },
+    "categories": [
+      {
+        "id": 1,
+        "icon": "FaCode",
+        "name": "Programming"
+      },
+      {
+        "id": 2,
+        "icon": "FaDesktop",
+        "name": "Web Development"
+      },
+      {
+        "id": 3,
+        "icon": "FaMobileAlt",
+        "name": "Mobile App Development"
+      },
+      {
+        "id": 4,
+        "icon": "FaLaptop",
+        "name": "UI/UX Design"
+      },
+      {
+        "id": 5,
+        "icon": "FaDatabase",
+        "name": "Database"
+      },
+      {
+        "id": 6,
+        "icon": "FaCodeBranch",
+        "name": "Software Engineering"
+      }
+    ],
+    "testimonials": [
+      {
+        "id": 1,
+        "text": "Skillex is the best platform for online learning. I've learned so much and improved my skills significantly.",
+        "author": "John Doe"
+      },
+      {
+        "id": 2,
+        "text": "The courses on Skillex are top-notch. The instructors are experts in their fields, and the content is engaging.",
+        "author": "Jane Cooper"
+      },
+      {
+        "id": 3,
+        "text": "I've recommended Skillex to all my friends. It's a game-changer for anyone looking to learn online.",
+        "author": "Jenny Wilson"
+      }
+    ],
+    "featuredInstructors": [
+      {
+        "id": 1,
+        "image": "instructor1.jpg",
+        "name": "Esther Howard",
+        "title": "Lead Developer, Skillex"
+      },
+      {
+        "id": 2,
+        "image": "instructor2.jpg",
+        "name": "Jane Cooper",
+        "title": "UI/UX Designer"
+      },
+      {
+        "id": 3,
+        "image": "instructor3.jpg",
+        "name": "John Doe",
+        "title": "Full Stack Developer"
+      }
+    ],
+    "students": [
+      {
+        "id": 1,
+        "image": "student1.jpg",
+        "name": "Emily",
+        "study": "Student, University of XYZ"
+      },
+      {
+        "id": 2,
+        "image": "student2.jpg",
+        "name": "David",
+        "study": "Student, ABC College"
+      },
+      {
+        "id": 3,
+        "image": "student3.jpg",
+        "name": "Jacob",
+        "study": "Mahasiswa, Politeknik Elektronika Negeri Surabaya"
+      }
+    ],
+    "classEdu": [
+      {
+        "id": 1,
+        "image": "class1",
+        "category": "Back End",
+        "title": "Membangun Database",
+        "description": "Basis data atau sekumpulan data yang dikelola sedemikian rupa sesuai dengan kebutuhan...",
+        "rating": 4.2,
+        "participants": "125",
+        "teacher": "Esther Howard",
+        "price": "0",
+        "heroes": "classHero1",
+        "year": "2001 Enrolled",
+        "discount": "FREE",
+        "namelink": "membangun-database",
+        "video": "https://www.youtube.com/watch?v=TngsP0kfAxg&list=PLc6SEcJkQ6DxQmmUzUilxRUNrJyeHDmX7",
+        "cover": "cover1"
+      },
+      {
+        "id": 2,
+        "image": "class2",
+        "category": "UI/UX",
+        "title": "Membuat Dashboard",
+        "description": "Mari bergabung dengan kelas terkenal kami, ilmu yang diberikan pasti akan bermanfaat...",
+        "rating": 4.3,
+        "participants": "16,325",
+        "teacher": "Jane Cooper",
+        "price": "50.000",
+        "heroes": "classHero2",
+        "year": "2001 Enrolled",
+        "namelink": "membuat-dashboard",
+        "video": "https://www.youtube.com/watch?v=z3slaXqmkT0&list=PLFIM0718LjIUHFRMzPJ0wGjx9_NlC5d1h",
+        "cover": "courses2"
+      }
+    ],
+    "recomEdu": [
+      {
+        "id": 1,
+        "image": "recom1",
+        "category": "Programming",
+        "title": "Belajar pemrograman u...",
+        "description": "Mari bergabung dengan kelas terkenal kami, ilmu yang diberikan pasti akan bermanfaat...",
+        "rating": 4.5,
+        "participants": "16,325",
+        "teacher": "Jane Cooper",
+        "price": "50.000",
+        "heroes": "recomHero1",
+        "year": "2001 Enrolled"
+      },
+      {
+        "id": 2,
+        "image": "recom2",
+        "category": "UX",
+        "title": "Belajar bersama Shoaib..",
+        "description": "Rancang Situs Web dan Aplikasi Seluler yang Disukai Pengguna Anda dan Kembali...",
+        "rating": 4.5,
+        "participants": "832",
+        "teacher": "Jenny Wilson",
+        "price": "59.000",
+        "heroes": "recomHero2",
+        "year": "2001 Enrolled"
+      },
+      {
+        "id": 3,
+        "image": "recom3",
+        "category": "Full Stack",
+        "title": "Membangun website ju..",
+        "description": "Membangun tampilan website penjualan online dari o hingga selesai the...",
+        "rating": 4.5,
+        "participants": "7,150 Aspiring",
+        "teacher": "Esther Howard",
+        "price": "75.000",
+        "heroes": "recomHero3",
+        "year": "2001 Enrolled"
+      }
+    ],
+    "learn": [
+      {
+        "id": 1,
+        "title": "Task 1",
+        "namelink": "learn"
+      },
+      {
+        "id": 2,
+        "title": "Task 2",
+        "namelink": "learn"
+      },
+      {
+        "id": 3,
+        "title": "Task 3",
+        "namelink": "learn"
+      }
+    ],
+    "careerEdu": [
+      {
+        "id": 1,
+        "image": "career1",
+        "title": "Kesempatan Karir",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "namelink": "career"
+      },
+      {
+        "id": 2,
+        "image": "career2",
+        "title": "Jadilah Partner Kami",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "namelink": "career"
+      },
+      {
+        "id": 3,
+        "image": "career3",
+        "title": "Alumni Kami Bekerja..",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "namelink": "career"
+      }
+    ],
+    "blogEdu": [
+      {
+        "id": 1,
+        "image": "blog1",
+        "title": "Mengapa Anda Harus ..",
+        "date": "20 Mei 2023",
+        "author": "Admin Skillex",
+        "namelink": "blog"
+      },
+      {
+        "id": 2,
+        "image": "blog2",
+        "title": "10 Langkah untuk Menj..",
+        "date": "19 Mei 2023",
+        "author": "Admin Skillex",
+        "namelink": "blog"
+      },
+      {
+        "id": 3,
+        "image": "blog3",
+        "title": "Mengapa Keterampilan ..",
+        "date": "18 Mei 2023",
+        "author": "Admin Skillex",
+        "namelink": "blog"
+      }
+    ],
+    "team": [
+      {
+        "id": 1,
+        "image": "team1",
+        "name": "John Doe",
+        "position": "CEO & Founder"
+      },
+      {
+        "id": 2,
+        "image": "team2",
+        "name": "Jane Cooper",
+        "position": "COO & Co-Founder"
+      },
+      {
+        "id": 3,
+        "image": "team3",
+        "name": "Jenny Wilson",
+        "position": "Lead Instructor"
+      },
+      {
+        "id": 4,
+        "image": "team4",
+        "name": "Esther Howard",
+        "position": "Lead Developer"
+      }
+    ],
+    "faq": [
+      {
+        "id": 1,
+        "question": "How can I join Skillex?",
+        "answer": "To join Skillex, you can visit our website and sign up for an account. Once you have an account, you can browse and enroll in courses, join live classes, and access a wide range of educational content."
+      },
+      {
+        "id": 2,
+        "question": "Are there any free courses available on Skillex?",
+        "answer": "Yes, Skillex offers a selection of free courses that you can enroll in. You can explore these courses by visiting our 'Free Courses' section."
+      },
+      {
+        "id": 3,
+        "question": "How can I become an instructor on Skillex?",
+        "answer": "If you're interested in becoming an instructor on Skillex, you can apply through our website. We welcome qualified individuals with expertise in various fields to join our team of instructors."
+      },
+      {
+        "id": 4,
+        "question": "Is Skillex available on mobile devices?",
+        "answer": "Yes, Skillex is accessible on mobile devices. You can download our mobile app from the App Store or Google Play Store to access our platform and learn on the go."
+      }
+    ],
+    "footerLinks": [
+      {
+        "id": 1,
+        "text": "Privacy Policy",
+        "link": "/privacy-policy"
+      },
+      {
+        "id": 2,
+        "text": "Terms of Service",
+        "link": "/terms-of-service"
+      },
+      {
+        "id": 3,
+        "text": "Contact Us",
+        "link": "/contact-us"
+      }
+    ],
+    "socialIcons": [
+      {
+        "id": 1,
+        "icon": "AiFillTwitterCircle",
+        "link": "https://twitter.com/skillex"
+      },
+      {
+        "id": 2,
+        "icon": "AiFillFacebook",
+        "link": "https://www.facebook.com/skillex"
+      },
+      {
+        "id": 3,
+        "icon": "AiOutlineInstagram",
+        "link": "https://www.instagram.com/skillex"
+      }
+    ],
+    "copyrightText": "© 2023 Skillex. All rights reserved.",
+    "contactInfo": {
+      "address": "123 Main Street, City, Country",
+      "email": "info@skillex.com",
+      "phone": "+1 (123) 456-7890"
+    }
+  }
+  

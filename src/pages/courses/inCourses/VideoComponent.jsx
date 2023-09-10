@@ -53,36 +53,36 @@ const VideoComponent = ({ videoUrl, cover }) => {
             <img
               src={cover}
               alt="Video Cover"
-              className="rounded-2xl w-full h-[407px] object-cover"
+              className="md:rounded-2xl rounded-xl w-full md:h-[407px] h-[207px] object-cover"
             />
             <div className="absolute top-2 left-0 my-5 ml-6">
-              <BsChevronLeft className="w-8 h-8 text-white" />
+              <BsChevronLeft className="md:w-8 w-6 md:h-8 h-6 text-white" />
             </div>
             <div
               className="absolute top-2 right-0 my-5 mr-6 cursor-pointer"
               onClick={toggleBookmark}
             >
               {isBookmarked ? (
-                <BsFillBookmarkFill className="w-8 h-8 text-white" />
+                <BsFillBookmarkFill className="md:w-8 w-6 md:h-8 h-6 text-white" />
               ) : (
-                <BsBookmark className="w-8 h-8 text-white" />
+                <BsBookmark className="md:w-8 w-6 md:h-8 h-6 text-white" />
               )}
             </div>
 
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
               <BsPlayCircle
-                className="w-16 h-16 text-white hover:text-Orange_Primary cursor-pointer"
+                className="md:w-16 w-12 md:h-16 h-12 text-white hover:text-Orange_Primary cursor-pointer"
                 onClick={togglePlay}
               />
             </div>
 
             <div className="absolute left-0 right-0 mx-48 bottom-4 rounded-lg">
               <div
-                className="h-2 my-2 rounded-lg  bg-Orange_Primary"
+                className="md:visible invisible h-2 md:my-2 rounded-lg bg-Orange_Primary"
               ></div>
             </div>
               <div className="absolute bottom-4 left-0 ml-6 flex space-x-5 items-center text-white">
-                <div className="text-md">
+                <div className="md:text-md text-sm">
                   {Math.floor(currentTime / 60)}:
                   {Math.floor(currentTime % 60)
                     .toString()
@@ -93,12 +93,12 @@ const VideoComponent = ({ videoUrl, cover }) => {
                     .toString()
                     .padStart(2, "0")}
                 </div>
-                <BsPlayFill className="w-6 h-6" />
+                <BsPlayFill className="md:w-6 w-5 md:h-6 h-5" />
               </div>
               <div className="absolute right-0 bottom-4 mr-6 flex space-x-6  text-white">
-                <BiVolumeFull className="w-6 h-6" />
-                <BsCardText className="w-6 h-6" />
-                <FaRegShareSquare className="w-6 h-6" />
+                <BiVolumeFull className="md:w-6 w-5 md:h-6 h-5" />
+                <BsCardText className="md:w-6 w-5 md:h-6 h-5" />
+                <FaRegShareSquare className="md:w-6 w-5 md:h-6 h-5" />
               </div>
           </div>
         )}

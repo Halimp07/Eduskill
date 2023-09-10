@@ -41,10 +41,11 @@ const Test = ({ activeDotIndex })  => {
     const iconColor = "text-[#F1F1F1]"; // Default color
     for (let i = 0; i < 5; i++) {
       const isActive = i === activeDot;
+      const iconKey = `dot-${i}`; // Unique key
       if (isActive) {
         icons.push(
           <RxDotFilled
-            key={i}
+            key={iconKey}
             className={`w-6 h-6 text-Orange_Primary`}
             onClick={() => handleDotClick(i)}
           />
@@ -52,7 +53,7 @@ const Test = ({ activeDotIndex })  => {
       } else {
         icons.push(
           <RxDotFilled
-            key={i}
+            key={iconKey}
             className={`w-6 h-6 ${iconColor}`}
             onClick={() => handleDotClick(i)}
           />
@@ -61,7 +62,7 @@ const Test = ({ activeDotIndex })  => {
     }
     return icons;
   };
-
+  
   const handleLeftChevronClick = () => {
     setLeftChevronClicked(true);
     setRightChevronClicked(false);

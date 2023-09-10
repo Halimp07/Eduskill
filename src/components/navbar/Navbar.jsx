@@ -31,12 +31,15 @@ const Navbar = ({ isActive, setActiveLink }) => {
           } container mx-auto flex items-center justify-between px-2`}
         >
           <div className="flex items-center gap-4">
-            <img
-              src={eduskill}
-              alt="EduSkill Logo"
-              className="w-48 h-12 sm:w-28 sm:h-10 md:w-44 md:h-14 lg:w-44 lg:h-14"
-            />
+            <a href="/">
+              <img
+                src={eduskill}
+                alt="EduSkill Logo"
+                className="w-48 h-12 sm:w-28 sm:h-10 md:w-44 md:h-14 lg:w-44 lg:h-14"
+              />
+            </a>
           </div>
+
           <div className="container mx-auto flex items-center justify-end">
             <div className="sm:flex hidden font-normal text-sm mr-4">
               {navLinks.map((link) => (
@@ -60,8 +63,11 @@ const Navbar = ({ isActive, setActiveLink }) => {
                 Masuk
               </button> */}
               <button className="py-2 px-3 md:py-3 md:px-6 font-bold text-white text-extra-mini md:text-sm border border-solid rounded-md md:rounded-lg border-Orange_Secondary bg-Orange_Primary">
-               <a href="https://eduskill.mayar.link/pl/basic-web-development"> Daftar Kela
-                </a>s
+                <a href="https://eduskill.mayar.link/pl/basic-web-development">
+                  {" "}
+                  Daftar Kela
+                </a>
+                s
               </button>
             </div>
             <div className="flex items-center md:mx-0 mx-2">
