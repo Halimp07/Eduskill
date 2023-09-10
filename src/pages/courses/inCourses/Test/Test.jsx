@@ -64,7 +64,7 @@ const Test = () => {
     setRightChevronColor("bg-[#F1F1F1] text-black");
 
     setActiveDot((prevDot) => (prevDot === 0 ? 4 : prevDot - 1));
-    navigate("/courses/namelink");
+    navigate("/courses/${namelink}");
   };
 
   const handleRightChevronClick = () => {

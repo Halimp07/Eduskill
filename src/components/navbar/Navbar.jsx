@@ -60,7 +60,8 @@ const Navbar = ({ isActive, setActiveLink }) => {
                 Masuk
               </button> */}
               <button className="py-2 px-3 md:py-3 md:px-6 font-bold text-white text-extra-mini md:text-sm border border-solid rounded-md md:rounded-lg border-Orange_Secondary bg-Orange_Primary">
-                Daftar Kelas
+               <a href="https://eduskill.mayar.link/pl/basic-web-development"> Daftar Kela
+                </a>s
               </button>
             </div>
             <div className="flex items-center md:mx-0 mx-2">

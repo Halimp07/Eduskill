@@ -47,12 +47,12 @@ const Home = () => {
       <div className="md:flex items-center justify-center relative">
         {/* First Column */}
         <div className="md:w-1/2 mt-28 md:mb-32 relative z-10">
-        <img
-        data-aos="zoom-in"
-        src={bg_eduskill_1}
-        alt=""
-        className="absolute bg-no-repeat z-0 bottom-0 w-[20rem] -left-16 -top-28 lg:w-[25rem] lg:top-0 lg:-left-28 md:w-[25rem] md:-top-32 md:-left-24"
-      />
+          <img
+            data-aos="zoom-in"
+            src={bg_eduskill_1}
+            alt=""
+            className="absolute bg-no-repeat z-0 bottom-0 w-[20rem] -left-16 -top-28 lg:w-[25rem] lg:top-0 lg:-left-28 md:w-[25rem] md:-top-32 md:-left-24"
+          />
           <div
             data-aos="fade-right"
             data-aos-delay="300"
@@ -75,6 +75,7 @@ const Home = () => {
               data-aos-delay="600"
               className="px-6 py-3 font-bold text-white bg-Orange_Primary rounded-lg text-sm"
             >
+              <a href="https://eduskill.mayar.link/pl/basic-web-development"></a>
               Daftar
             </button>
             <button
@@ -82,7 +83,9 @@ const Home = () => {
               data-aos-delay="700"
               className="px-6 py-3 font-bold text-Orange_Teritiary bg-[#F4EBFF] rounded-lg text-sm ml-4"
             >
-              CS Admin
+              <a href="https://wa.me/6281553546308?text=Saya%20memiliki%20kendala,%20yaitu...">
+                CS Admin
+              </a>
             </button>
             <div className="mt-10 relative z-10">
               <div className="grid grid-cols-3 md:grid md:grid-cols-3 gap-2 md:gap-4">
@@ -162,7 +165,9 @@ const Home = () => {
           data-aos="fade-down"
           className="md:mt-0 mr-0 md:mr-16 text-center md:text-left mb-4 md:mb-0"
         >
-          <p className="font-bold text-2xl md:text-xl text-Orange_Primary">10+</p>
+          <p className="font-bold text-2xl md:text-xl text-Orange_Primary">
+            10+
+          </p>
           <p className="text-2xl md:text-xl">Collaborations</p>
         </div>
         <div className="flex items-center justify-center md:justify-center flex-wrap gap-16 pt-4 md:pt-0">
