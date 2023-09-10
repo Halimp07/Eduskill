@@ -558,26 +558,31 @@ export const taskLearn = [
     items: [
       {
         icons: [<BsCircle />], // Add the icons here
+        value: "100",
         title: "Buatlah Kata “Hello World”",
         subtitle: "Perintah dasar",
       },
       {
         icons: [<BsCircle />], // Add the icons here
+        value: "-",
         title: "Buatlah WEB Perkenalan",
         subtitle: "Berisi nama, ttl, umur, dan asal",
       },
       {
         icons: [<BsCircle />], // Add the icons here
+        value: "-",
         title: "Hiaslah WEB perkenalanmu",
         subtitle: "Menggunakan CSS",
       },
       {
         icons: [<BsCircle />], // Add the icons here
+        value: "-",
         title: "Tambahkan Foto Profil ",
         subtitle: "Pada Web perkenalanmu",
       },
       {
         icons: [<BsCircle />], // Add the icons here
+        value: "-",
         title: "Berikan animasi sederhana",
         subtitle: "Pada foto yang ditambahkan",
       },

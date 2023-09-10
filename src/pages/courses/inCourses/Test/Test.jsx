@@ -119,10 +119,10 @@ const Test = () => {
         </div>
       </div>
 
-    
-
       <div className="flex mt-7 justify-between">
-        <div className="flex-grow-0"> {/* Add this flex-grow class */}
+        <div className="flex-grow-0">
+          {" "}
+          {/* Add this flex-grow class */}
           <h1 className="font-semibold text-xl md:text-2xl text-[#333333] ">
             Tugas Saya
           </h1>
@@ -138,10 +138,23 @@ const Test = () => {
                           index === 0 ? "text-[#20B486]" : "text-[#FF9B26]"
                         }`}
                       >
-                        {item.icons}
+                        <div className="relative flex items-center justify-center w-12 h-12">
+                          {item.icons}
+                          {item.value && (
+                            <p
+                              className={`absolute top-0 left-0 w-full h-full flex items-center justify-center text-sm ${
+                                item.value === "100"
+                                  ? "text-[#20B486] font-bold"
+                                  : "text-[#FF9B26] font-bold"
+                              }`}
+                            >
+                              {item.value}
+                            </p>
+                          )}
+                        </div>
                       </div>
                       <div className="ml-6">
-                        <h3 className="font-semibold text-[#757575]">
+                        <h3 classNxame="font-semibold text-[#757575]">
                           {item.title}
                         </h3>
                         <h3 className="mt-1 text-sm text-[#8C8C8C]">
@@ -155,7 +168,9 @@ const Test = () => {
             ))}
           </div>
         </div>
-        <div className="flex-grow-0"> {/* Add this flex-shrink-0 class */}
+        <div className="flex-grow-0">
+          {" "}
+          {/* Add this flex-shrink-0 class */}
           <Compiler /> {/* Compiler component on the right */}
         </div>
       </div>
