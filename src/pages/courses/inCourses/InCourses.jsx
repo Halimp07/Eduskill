@@ -57,7 +57,7 @@ const InCourses = () => {
     setActiveDot((prevDot) => (prevDot === 0 ? 4 : prevDot - 1));
   };
 
-  const [activeDot, setActiveDot] = useState(0);
+  const [activeDot, setActiveDot] = useState(0); // Set the activeDot to 0 in InCourses
   const [leftChevronClicked, setLeftChevronClicked] = useState(false);
   const [rightChevronClicked, setRightChevronClicked] = useState(false); // Initially set to false
   const [leftChevronColor, setLeftChevronColor] = useState(
@@ -101,20 +101,22 @@ const InCourses = () => {
 
     // Update the activeDot state to go to the previous dot
     setActiveDot((prevDot) => (prevDot === 0 ? 4 : prevDot - 1));
-    navigate("/courses/namelink");
+    navigate(`/courses/${namelink}`);
   };
-
+  
   const handleRightChevronClick = () => {
     setRightChevronClicked(true);
     setLeftChevronClicked(false);
     setRightChevronColor("bg-Orange_Primary text-white");
     setLeftChevronColor("bg-[#F1F1F1] text-black");
-
-    // Update the activeDot state to go to the next dot
-    setActiveDot((prevDot) => (prevDot === 4 ? 0 : prevDot + 1));
-    // Change this line
-    navigate(`/courses/${namelink}/test`);
+  
+    // Update the activeDot state to 1 (index 1)
+    setActiveDot(1); // Set activeDot to 1
+  
+    // Pass activeDot as a URL parameter
+    navigate(`/courses/${namelink}/test?activeDot=1`);
   };
+  
 
   return (
     <div

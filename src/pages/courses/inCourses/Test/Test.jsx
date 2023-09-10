@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, useLocation } from "react-router-dom";
 import { taskLearn } from "@/Data";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
 import Compiler from "./Compiler";
 
-const Test = () => {
+const Test = ({ activeDotIndex })  => {
   const { namelink } = useParams();
   const navigate = useNavigate();
+  const location = useLocation();
 
   const handleDotClick = (index) => {
     setActiveDot(index);
@@ -21,7 +22,11 @@ const Test = () => {
     setActiveDot((prevDot) => (prevDot === 0 ? 4 : prevDot - 1));
   };
 
-  const [activeDot, setActiveDot] = useState(0);
+  const queryParams = new URLSearchParams(location.search);
+  const initialActiveDot = queryParams.get("activeDot");
+  const [activeDot, setActiveDot] = useState(initialActiveDot ? parseInt(initialActiveDot, 10) : 0);
+
+  // const [activeDot, setActiveDot] = useState(activeDotIndex);
   const [leftChevronClicked, setLeftChevronClicked] = useState(false);
   const [rightChevronClicked, setRightChevronClicked] = useState(false);
   const [leftChevronColor, setLeftChevronColor] = useState(
@@ -62,11 +67,13 @@ const Test = () => {
     setRightChevronClicked(false);
     setLeftChevronColor("bg-Orange_Primary text-white");
     setRightChevronColor("bg-[#F1F1F1] text-black");
-
+  
     setActiveDot((prevDot) => (prevDot === 0 ? 4 : prevDot - 1));
-    navigate("/courses/${namelink}");
+  
+    // Navigate to the 'InCourses' page when the left chevron is clicked
+    navigate(`/courses/${namelink}`);
   };
-
+  
   const handleRightChevronClick = () => {
     setRightChevronClicked(true);
     setLeftChevronClicked(false);
