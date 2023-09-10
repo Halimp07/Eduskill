@@ -142,10 +142,10 @@ const Test = () => {
                           {item.icons}
                           {item.value && (
                             <p
-                              className={`absolute top-0 left-0 w-full h-full flex items-center justify-center text-sm ${
+                              className={`absolute top-0 font-bold left-0 w-full h-full flex items-center justify-center text-sm ${
                                 item.value === "100"
-                                  ? "text-[#20B486] font-bold"
-                                  : "text-[#FF9B26] font-bold"
+                                  ? "text-[#20B486]"
+                                  : "text-[#FF9B26]"
                               }`}
                             >
                               {item.value}
@@ -154,7 +154,7 @@ const Test = () => {
                         </div>
                       </div>
                       <div className="ml-6">
-                        <h3 classNxame="font-semibold text-[#757575]">
+                      <h3 className="font-semibold text-[#757575]">
                           {item.title}
                         </h3>
                         <h3 className="mt-1 text-sm text-[#8C8C8C]">
