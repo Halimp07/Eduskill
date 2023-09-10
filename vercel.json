@@ -1,13 +1,16 @@
 {
+    "version": 2,
+    "builds": [{ "src": "package.json", "use": "@now/static-build" }],
+    "routes": [{ "src": "/(.*)", "dest": "/" }],
+    "env": {
+      "NODE_ENV": "production"
+    },
     "build": {
       "env": {
         "NODE_ENV": "production"
       },
       "command": "npm install --legacy-peer-deps && npm run build",
-      "use": "@vercel/node"
-    },
-    "rewrites": [
-      { "source": "/(.*)", "destination": "/" }
-    ]
+      "use": "@now/node"
+    }
   }
   
