@@ -76,7 +76,7 @@ import recomHero3 from "./assets/pages/CoursesHero/recomHero3.png";
 // Cover Video
 import cover1 from "./assets/pages/CoverVideo/cover1.png";
 
-// Recom learn 
+// Recom learn
 import learn1 from "./assets/pages/Learn/learn1.png";
 import learn2 from "./assets/pages/Learn/learn2.png";
 import learn3 from "./assets/pages/Learn/learn3.png";
@@ -302,20 +302,20 @@ export const reviewsEdu = [
 export const classEdu = [
   {
     id: 1,
-    image: class1,
-    category: "Back End",
-    title: "Membangun Database",
+    image: class6,
+    category: "Front End",
+    title: "Basic Pemrograman Web Development",
     description:
-      "Basis data atau sekumpulan data yang dikelola sedemikian rupa sesuai.....",
+      "Pelajari fundamental proses pembuatan website dari dasar hingga dapat membuat sendiri",
     rating: 4.2,
     participants: "{125}",
     teacher: "Esther Howard",
-    price: "0",
-    heroes: classHero1,
+    price: "79.000",
+    heroes: classHero6,
     year: "2001 Enrolled",
-    discount: "FREE",
-    namelink: "membangun-database",
-    video: "https://www.youtube.com/watch?v=TngsP0kfAxg&list=PLc6SEcJkQ6DxQmmUzUilxRUNrJyeHDmX7",
+    namelink: "membangun-website",
+    video:
+      "https://www.youtube.com/watch?v=z3slaXqmkT0&list=PLFIM0718LjIUHFRMzPJ0wGjx9_NlC5d1h",
     cover: cover1,
   },
   {
@@ -332,9 +332,9 @@ export const classEdu = [
     heroes: classHero2,
     year: "2001 Enrolled",
     namelink: "membuat-dashboard",
-    video: "https://www.youtube.com/watch?v=z3slaXqmkT0&list=PLFIM0718LjIUHFRMzPJ0wGjx9_NlC5d1h",
+    video:
+      "https://www.youtube.com/watch?v=z3slaXqmkT0&list=PLFIM0718LjIUHFRMzPJ0wGjx9_NlC5d1h",
     cover: courses2,
-
   },
   {
     id: 3,
@@ -350,7 +350,8 @@ export const classEdu = [
     heroes: classHero3,
     year: "2001 Enrolled",
     namelink: "belajar-bersama-shoaib",
-    video: "https://www.youtube.com/watch?v=z3slaXqmkT0&list=PLFIM0718LjIUHFRMzPJ0wGjx9_NlC5d1h",
+    video:
+      "https://www.youtube.com/watch?v=z3slaXqmkT0&list=PLFIM0718LjIUHFRMzPJ0wGjx9_NlC5d1h",
     cover: courses3,
   },
   {
@@ -367,8 +368,9 @@ export const classEdu = [
     heroes: classHero4,
     year: "2001 Enrolled",
     namelink: "web-development",
-        video: "https://www.youtube.com/watch?v=z3slaXqmkT0&list=PLFIM0718LjIUHFRMzPJ0wGjx9_NlC5d1h",
-        cover: courses4,
+    video:
+      "https://www.youtube.com/watch?v=z3slaXqmkT0&list=PLFIM0718LjIUHFRMzPJ0wGjx9_NlC5d1h",
+    cover: courses4,
   },
   {
     id: 5,
@@ -385,25 +387,28 @@ export const classEdu = [
     year: "2001 Enrolled",
     discount: "FREE",
     namelink: "dashboard-absensi-online",
-        video: "https://www.youtube.com/watch?v=z3slaXqmkT0&list=PLFIM0718LjIUHFRMzPJ0wGjx9_NlC5d1h",
-        cover: courses5,
+    video:
+      "https://youtu.be/9o_qfDVogd8?si=zQCMaKkCAXrHcCqZ",
+    cover: courses5,
   },
   {
     id: 6,
-    image: class6,
-    category: "Front End",
-    title: "Membangun Website...",
+    image: class1,
+    category: "Back End",
+    title: "Membangun Database",
     description:
-      "Pelajari cara menerapkan prinsip Pengalaman Pengguna (UX) ke desain ...",
+      "Basis data atau sekumpulan data yang dikelola sedemikian rupa sesuai.....",
     rating: 4.2,
     participants: "{125}",
     teacher: "Esther Howard",
-    price: "79.000",
-    heroes: classHero6,
+    price: "0",
+    heroes: classHero1,
     year: "2001 Enrolled",
-    namelink: "membangun-website",
-        video: "https://www.youtube.com/watch?v=z3slaXqmkT0&list=PLFIM0718LjIUHFRMzPJ0wGjx9_NlC5d1h",
-        cover: courses1,
+    discount: "FREE",
+    namelink: "membangun-database",
+    video:
+      "https://www.youtube.com/watch?v=TngsP0kfAxg&list=PLc6SEcJkQ6DxQmmUzUilxRUNrJyeHDmX7",
+    cover: cover1,
   },
   {
     id: 7,
@@ -419,8 +424,9 @@ export const classEdu = [
     heroes: classHero5,
     year: "2001 Enrolled",
     namelink: "figma-ui-ux-design",
-        video: "https://www.youtube.com/watch?v=z3slaXqmkT0&list=PLFIM0718LjIUHFRMzPJ0wGjx9_NlC5d1h",
-        cover: courses1,
+    video:
+      "https://www.youtube.com/watch?v=z3slaXqmkT0&list=PLFIM0718LjIUHFRMzPJ0wGjx9_NlC5d1h",
+    cover: courses1,
   },
   {
     id: 8,
@@ -436,8 +442,9 @@ export const classEdu = [
     heroes: classHero1,
     year: "2001 Enrolled",
     namelink: "test",
-        video: "https://www.youtube.com/watch?v=z3slaXqmkT0&list=PLFIM0718LjIUHFRMzPJ0wGjx9_NlC5d1h",
-        cover: courses2,
+    video:
+      "https://www.youtube.com/watch?v=z3slaXqmkT0&list=PLFIM0718LjIUHFRMzPJ0wGjx9_NlC5d1h",
+    cover: courses2,
   },
   {
     id: 9,
@@ -453,8 +460,9 @@ export const classEdu = [
     heroes: classHero3,
     year: "2001 Enrolled",
     namelink: "test",
-        video: "https://www.youtube.com/watch?v=z3slaXqmkT0&list=PLFIM0718LjIUHFRMzPJ0wGjx9_NlC5d1h",
-        cover: courses3,
+    video:
+      "https://www.youtube.com/watch?v=z3slaXqmkT0&list=PLFIM0718LjIUHFRMzPJ0wGjx9_NlC5d1h",
+    cover: courses3,
   },
 ];
 
@@ -551,7 +559,6 @@ export const videoLearn = [
   },
 ];
 
-
 export const taskLearn = [
   {
     id: 1,
@@ -588,10 +595,7 @@ export const taskLearn = [
       },
     ],
     names: "coba",
-
   },
-  
+
   // Add more objects with different IDs and their respective items
 ];
-
-
