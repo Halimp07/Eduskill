@@ -29,9 +29,9 @@ function Carousel() {
       link: "/testing",
     },
     {
-      title: "Belly",
+      title: "Data Sains",
       description:
-        "Kelas dalam pengembangan yang mencakup kemajuan terbaru dalam web.",
+        "Kursus berfokus pada teknologi AI mencakup teknologi terbaru.",
       icon: icon2,
       link: "/belly",
     },
@@ -53,10 +53,10 @@ function Carousel() {
     <div className="relative">
       <p className="font-semibold text-sm mb-2 text-center md:text-sm md:mb-2 text-Orange_Primary">
         Pelayanan Kami
-      </p>{" "}
+      </p>
       <h1 className="font-semibold text-xl mb-10 text-center md:text-3xl md:mb-10 md:mx-56">
         Membina lingkungan belajar yang menyenangkan & menarik
-      </h1>{" "}
+      </h1>
       <div className="mt-4 grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2 gap-2 md:gap-8">
         {visibleSlides.map((slide, slideIndex) => (
           <div
@@ -148,26 +148,27 @@ function Carousel() {
       <div className="flex flex-col justify-center items-center mt-20">
         <p className="font-semibold text-sm mb-2 text-center md:text-sm md:mb-2 text-Orange_Primary">
           Pelayanan Kami
-        </p>{" "}
+        </p>
         <h1 className="font-semibold text-xl md:mb-10 mb-4 text-center md:text-3xl">
-          Masih binggung ingin mempelajari apa??{" "}
-        </h1>{" "}
+          Masih binggung ingin mempelajari apa??
+        </h1>
         <p className="text-md mb-2 md:mt-6 md:mx-48 text-center text-Black_Primary font-light">
-          Ikuti{" "}
+          Ikuti
           <span className="text-Orange_Primary font-semibold">
-            {" "}
-            Tes Minat Bakat{" "}
-          </span>{" "}
+            
+            Tes Minat Bakat
+          </span>
           untuk membantu anda dalam menemukan jalur yang sesuai dengan potensi,
           serta memberikan arahan dalam memilih pendidikan atau pekerjaan yang
-          sesuai dengan minat dan bakat yang dimiliki.{" "}
-        </p>{" "}
+          sesuai dengan minat dan bakat yang dimiliki.
+        </p>
         <motion.form
           initial={{ scale: 0 }}
           whileInView={{ scale: 1 }}
           transition={{ duration: 0.3 }}
+          className="mt-6"
         >
-          <button className="bg-Orange_Primary text-white py-2 px-6 mt-6 text-extra-mini font-semibold border rounded-md border-opacity-30 hover:bg-white hover:text-black hover:border-Orange_Primary transition-all">
+          <button className="bg-Orange_Primary text-white py-2 px-6 text-extra-mini font-semibold border rounded-md border-opacity-30 hover:bg-white hover:text-black hover:border-Orange_Primary transition-all">
             Ikuti Test!
           </button>
         </motion.form>

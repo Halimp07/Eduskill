@@ -39,8 +39,8 @@ import layer_2 from "./assets/second_hero_layer.png";
 import layer_3 from "./assets/third_hero_layer.png";
 
 // Circle
-import circular1 from "./assets/circular_teacher1.png";
-import circular2 from "./assets/circular_teacher2.png";
+import circular1 from "./assets/pages/Home/circular_teacher1.png";
+import circular2 from "./assets/pages/Home/circular_teacher2.png";
 import circular3 from "./assets/circular_teacher3.png";
 import circular4 from "./assets/circular_teacher4.png";
 
@@ -192,25 +192,6 @@ export const courses = [
 ];
 
 export const logos = [logo1, logo2, logo3, logo4, logo5];
-
-export const accordions = [
-  {
-    id: 1,
-    title: "What is Skillex?",
-  },
-  {
-    id: 2,
-    title: "What can I learn from Skillex?",
-  },
-  {
-    id: 3,
-    title: "Can I teach on Skillex?",
-  },
-  {
-    id: 4,
-    title: "What is included in my Skillex membership?",
-  },
-];
 
 export const eduskill = [logo_eduskill];
 

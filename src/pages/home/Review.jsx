@@ -30,26 +30,22 @@ function Review() {
           ingin memulai karir baru, atau membutuhkan penyegaran.
         </h1>
       </div>
-      <div className="grid grid-col mt-8">
+      <div className="mt-8">
         {visibleReviews.map((item, reviewIndex) => (
-          <div key={item.id}>
-            <div className="flex flex-col gap-4">
-              <div className="relative rounded-full mx-auto">
-                <img
-                  src={item.image}
-                  alt={`Image ${item.id}`}
-                  className="object-cover md:w-full md:h-full w-16 h-16"
-                />
-              </div>
-              <div className="text-center">
-                <p className="font-semibold pt-2 md:text-base text-sm">
-                  {item.name}
-                </p>
-                <p className="text-[#667085] font-light md:text-lg text-xs">
-                  {item.study}
-                </p>
-              </div>
+          <div key={item.id} className="flex flex-col items-center text-center">
+            <div className="relative rounded-full mx-auto w-20 h-20">
+              <img
+                src={item.image}
+                alt={`Image ${item.id}`}
+                className="object-cover w-full h-full rounded-full"
+              />
             </div>
+            <p className="font-semibold pt-2 md:text-base text-sm">
+              {item.name}
+            </p>
+            <p className="text-[#667085] font-light md:text-lg text-xs">
+              {item.study}
+            </p>
           </div>
         ))}
       </div>

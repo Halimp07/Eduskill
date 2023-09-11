@@ -1,4 +1,4 @@
-import { Navbar, Home, Footer, Courses, InCourses, Test, NextSlide } from "./index";
+import { Navbar, Home, Footer, Courses, InCourses, Test } from "./index";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const App = () => {

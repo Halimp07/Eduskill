@@ -4,7 +4,6 @@ import { circleTeacher } from "@/Data"; // Import the circleTeacher data
 const CircularImg = () => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-4">
-      {" "}
       {/* Center the content */}
       {circleTeacher.map((item, index) => (
         <div key={item.id} className="w-full">

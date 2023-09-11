@@ -48,12 +48,12 @@ const Classes = () => {
         <h1 className="font-semibold text-xl md:text-3xl md:mb-2 ">
           Kelas Popular Kami
         </h1>
-        <p className="font-normal text-sm  text-[#667085] ">
+        <p className="font-normal text-sm text-[#667085] ">
           Mari bergabung dengan kelas terkenal kami, ilmu yang diberikan pasti
           akan bermanfaat bagi Anda.
         </p>
       </div>
-      <div className="mt-4 overflow-x-hidden w-full relative">
+      <div className="mt-10 overflow-x-hidden w-full relative">
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-2">
           {visibleCourses.map((course, index) => (
             <div key={course.id}>

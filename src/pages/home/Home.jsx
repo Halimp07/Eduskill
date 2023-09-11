@@ -9,8 +9,7 @@ import {
   layers_2,
   layers_3,
 } from "@/Data";
-import { motion } from "framer-motion";
-import { Services, Review, Classes, Teacher } from "@/index"; // Adjust the import paths accordingly
+import { Services, Classes, Teacher } from "@/index"; 
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -183,7 +182,6 @@ const Home = () => {
         </div>
       </div>
       <Services />
-      <Review />
       <Classes />
       <Teacher />
     </div>
