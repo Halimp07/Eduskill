@@ -66,8 +66,7 @@ const Home = () => {
             data-aos-delay="500"
             className="text-sm leading-7 text-gray max-w-md"
           >
-            Eduskill Menyediakan Kelas Design, Web Development, Business Plan
-            Yang Cocok Untuk Mahasiswa Maupun Pemula
+            Eduskill menyediakan kelas pemrograman yang di dukung dengan codereview dan di dukung dengan Mentorbot
           </p>
           <div className="mt-6">
             <button
