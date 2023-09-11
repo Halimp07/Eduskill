@@ -127,7 +127,7 @@ const InCourses = () => {
         <p className="font-semibold text-sm mb-2 md:text-sm md:mb-2 text-Orange_Primary">
           Jelajahi Kelas
         </p>
-        <h1 className="font-semibold text-xl md:text-3xl md:mb-2 ">
+        <h1 className="font-semibold text-xl md:text-3xl md:mb-2">
           {course.title}
         </h1>
         <div className="relative md:flex md:justify-between md:items-center ">
@@ -181,7 +181,7 @@ const InCourses = () => {
             Rekomendasi Pembelajaran Lainnya
           </h3>
           <div className="md:flex md:flex-grow md:space-x-3 md:text-left">
-          {learn.map((item) => (
+            {learn.map((item) => (
               <Link key={item.id} to={`/courses/${item.namelink}`}>
                 {/* Wrap the content you want to make clickable */}
                 <div>
