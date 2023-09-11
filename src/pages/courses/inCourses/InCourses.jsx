@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, Link } from "react-router-dom";
 import { classEdu, learn, videoLearn } from "@/Data";
 import VideoComponent from "./VideoComponent";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
@@ -181,9 +181,10 @@ const InCourses = () => {
             Rekomendasi Pembelajaran Lainnya
           </h3>
           <div className="md:flex md:flex-grow md:space-x-3 md:text-left">
-            {learn.map((item) => {
-              return (
-                <div key={item.id}>
+          {learn.map((item) => (
+              <Link key={item.id} to={`/courses/${item.namelink}`}>
+                {/* Wrap the content you want to make clickable */}
+                <div>
                   <img
                     className="w-[240px] h-[145px] md:mx-0"
                     src={item.image}
@@ -193,8 +194,8 @@ const InCourses = () => {
                     {item.title}
                   </h3>
                 </div>
-              );
-            })}
+              </Link>
+            ))}
           </div>
         </div>
 

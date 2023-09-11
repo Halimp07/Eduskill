@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate, useLocation } from "react-router-dom";
-import { taskLearn } from "@/Data";
+import { taskLearn, slideDot } from "@/Data";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
 import Compiler from "./Compiler";
@@ -74,16 +74,16 @@ const Test = ({ activeDotIndex })  => {
     // Navigate to the 'InCourses' page when the left chevron is clicked
     navigate(`/courses/${namelink}`);
   };
-  
   const handleRightChevronClick = () => {
     setRightChevronClicked(true);
     setLeftChevronClicked(false);
     setRightChevronColor("bg-Orange_Primary text-white");
     setLeftChevronColor("bg-[#F1F1F1] text-black");
-
+  
     setActiveDot((prevDot) => (prevDot === 4 ? 0 : prevDot + 1));
-    navigate(`/courses/${namelink}/test`);
+    navigate(`/courses/${namelink}/test/links`);
   };
+  
 
   return (
     <div className="md:section container mx-auto pt-24 pb-24 px-6" id="test">

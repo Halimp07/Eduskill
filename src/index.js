@@ -8,7 +8,9 @@ import Navbar from "@components/navbar/Navbar";
 import Courses from "@pages/courses/Courses";
 import InCourses from "@pages/courses/inCourses/InCourses";
 import Test from "@/pages/courses/inCourses/Test/Test";
+import { NextSlide } from "@/pages/courses/inCourses/Test/nextSlide/NextSlide";
+NextSlide
 
-export { Navbar, Home, Services, Classes, Teacher, Review, Footer, Courses, InCourses, Test };
+export { Navbar, Home, Services, Classes, Teacher, Review, Footer, Courses, InCourses, Test, NextSlide };
 
 

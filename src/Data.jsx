@@ -313,9 +313,9 @@ export const classEdu = [
     price: "79.000",
     heroes: classHero6,
     year: "2001 Enrolled",
-    namelink: "membangun-website",
+    namelink: "basic-web-dev",
     video:
-      "https://www.youtube.com/watch?v=z3slaXqmkT0&list=PLFIM0718LjIUHFRMzPJ0wGjx9_NlC5d1h",
+      "https://www.youtube.com/watch?si=zQCMaKkCAXrHcCqZ&v=9o_qfDVogd8&feature=youtu.be",
     cover: cover1,
   },
   {
@@ -333,7 +333,7 @@ export const classEdu = [
     year: "2001 Enrolled",
     namelink: "membuat-dashboard",
     video:
-      "https://www.youtube.com/watch?v=z3slaXqmkT0&list=PLFIM0718LjIUHFRMzPJ0wGjx9_NlC5d1h",
+    "https://www.youtube.com/watch?si=75H7bGgHJFwbYS42&v=I4_TW52YYsQ&feature=youtu.be",
     cover: courses2,
   },
   {
@@ -351,7 +351,7 @@ export const classEdu = [
     year: "2001 Enrolled",
     namelink: "belajar-bersama-shoaib",
     video:
-      "https://www.youtube.com/watch?v=z3slaXqmkT0&list=PLFIM0718LjIUHFRMzPJ0wGjx9_NlC5d1h",
+      "https://www.youtube.com/watch?si=3kGHowBFqGhIgzm-&v=9c609jJ3nXg&feature=youtu.be",
     cover: courses3,
   },
   {
@@ -369,7 +369,7 @@ export const classEdu = [
     year: "2001 Enrolled",
     namelink: "web-development",
     video:
-      "https://www.youtube.com/watch?v=z3slaXqmkT0&list=PLFIM0718LjIUHFRMzPJ0wGjx9_NlC5d1h",
+      "https://www.youtube.com/watch?si=QYyL9-PVGn1y6Bq0&v=zbVGfryEn5U&feature=youtu.be",
     cover: courses4,
   },
   {
@@ -387,8 +387,7 @@ export const classEdu = [
     year: "2001 Enrolled",
     discount: "FREE",
     namelink: "dashboard-absensi-online",
-    video:
-      "https://youtu.be/9o_qfDVogd8?si=zQCMaKkCAXrHcCqZ",
+    video: "https://www.youtube.com/watch?si=7w-yVSA8Uliq29cV&v=9EwUJs5xxHE&feature=youtu.be",
     cover: courses5,
   },
   {
@@ -407,7 +406,7 @@ export const classEdu = [
     discount: "FREE",
     namelink: "membangun-database",
     video:
-      "https://www.youtube.com/watch?v=TngsP0kfAxg&list=PLc6SEcJkQ6DxQmmUzUilxRUNrJyeHDmX7",
+      "https://www.youtube.com/watch?si=ftl4Ab0xBbbvRexD&v=bn8SU_nRXT4&feature=youtu.be",
     cover: cover1,
   },
   {
@@ -425,7 +424,7 @@ export const classEdu = [
     year: "2001 Enrolled",
     namelink: "figma-ui-ux-design",
     video:
-      "https://www.youtube.com/watch?v=z3slaXqmkT0&list=PLFIM0718LjIUHFRMzPJ0wGjx9_NlC5d1h",
+      "https://www.youtube.com/watch?si=hNPjigHd11OEABoG&v=LtJgYWUTCW0&feature=youtu.be",
     cover: courses1,
   },
   {
@@ -441,9 +440,9 @@ export const classEdu = [
     price: "50.000",
     heroes: classHero1,
     year: "2001 Enrolled",
-    namelink: "test",
+    namelink: "testingggg",
     video:
-      "https://www.youtube.com/watch?v=z3slaXqmkT0&list=PLFIM0718LjIUHFRMzPJ0wGjx9_NlC5d1h",
+      "https://www.youtube.com/watch?si=Rv2-5DBLcKyQ2mK6&v=fZimVMe1XkA&feature=youtu.be",
     cover: courses2,
   },
   {
@@ -459,7 +458,25 @@ export const classEdu = [
     price: "50.000",
     heroes: classHero3,
     year: "2001 Enrolled",
-    namelink: "test",
+    namelink: "test20",
+    video:
+      "https://www.youtube.com/watch?v=z3slaXqmkT0&list=PLFIM0718LjIUHFRMzPJ0wGjx9_NlC5d1h",
+    cover: courses3,
+  },
+  {
+    id: 10,
+    image: class3,
+    category: "Design",
+    title: "Cobain",
+    description:
+      "Mari bergabung dengan kelas terkenal kami, ilmu yang diberikan pasti akan bermanfaat...",
+    rating: 4.5,
+    participants: "{16,325}",
+    teacher: "John Doe",
+    price: "50.000",
+    heroes: classHero3,
+    year: "2001 Enrolled",
+    namelink: "testing",
     video:
       "https://www.youtube.com/watch?v=z3slaXqmkT0&list=PLFIM0718LjIUHFRMzPJ0wGjx9_NlC5d1h",
     cover: courses3,
@@ -594,8 +611,34 @@ export const taskLearn = [
         subtitle: "Pada foto yang ditambahkan",
       },
     ],
-    names: "coba",
   },
-
-  // Add more objects with different IDs and their respective items
+];
+// Test.jsx
+export const slideDot = [
+  {
+    id: 1,
+    items: [
+      {
+        title: "Basic Pemrograman Web Development 2",
+        links: "basic-web-dev-2",
+        video:
+          "https://www.youtube.com/watch?si=75H7bGgHJFwbYS42&v=I4_TW52YYsQ&feature=youtu.be",
+        cover: cover1,
+      },
+      {
+        title: "Basic Pemrograman Web Development 3",
+        links: "basic-web-dev-3",
+        video:
+          "https://www.youtube.com/watch?si=3kGHowBFqGhIgzm-&v=9c609jJ3nXg&feature=youtu.be",
+        cover: courses2,
+      },
+      {
+        title: "Basic Pemrograman Web Development 4",
+        links: "basic-web-dev-4",
+        video:
+          "https://www.youtube.com/watch?si=QYyL9-PVGn1y6Bq0&v=zbVGfryEn5U&feature=youtu.be",
+        cover: courses3,
+      },
+    ],
+  },
 ];
