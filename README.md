@@ -6,7 +6,7 @@
 
 </h4>
 
-## Eduskill
+## Eduskill - Website
 
 1. Pull in terminal
 ```
