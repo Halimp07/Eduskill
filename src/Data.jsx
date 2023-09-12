@@ -39,14 +39,14 @@ import layer_2 from "./assets/second_hero_layer.png";
 import layer_3 from "./assets/third_hero_layer.png";
 
 // Circle
-import circular1 from "./assets/pages/Home/circular_teacher1.png";
-import circular2 from "./assets/pages/Home/circular_teacher2.png";
-import circular3 from "./assets/pages/Home/circular_teacher3.png";
-import circular4 from "./assets/pages/Home/circular_teacher4.png";
+import circular1 from "./assets/pages/Home/circular_teacher1.svg";
+import circular2 from "./assets/pages/Home/circular_teacher2.svg";
+import circular3 from "./assets/pages/Home/circular_teacher3.svg";
+import circular4 from "./assets/pages/Home/circular_teacher4.svg";
 
 // Reviews
 import reviews1 from "./assets/reviews_1.png";
-import reviews2 from "./assets/circular_teacher1.png";
+import reviews2 from "./assets/pages/Home/circular_teacher1.svg";
 import reviews3 from "./assets/reviews_1.png";
 
 // 2nd Pages Class
