@@ -223,17 +223,17 @@ export const layers_3 = [layer_3];
 export const circleTeacher = [
   {
     id: 1,
-    name: "Hariz Izzuddin",
+    name: "Fariz Muhammad",
     job: "Product Owner",
     position:
-      "Founder Eduskill & GoCab.",
+      "Chief Technology Officer",
     icons: [<AiOutlineTwitter />, <AiFillLinkedin />], // Add the icons here
     image: circular1,
   },
   {
     id: 2,
     name: "Daniel Krisna",
-    job: "Front-End Web Developer",
+    job: "FE Web Developer",
     position: "Developer.",
     icons: [<AiOutlineTwitter />, <AiFillLinkedin />], // Add the icons here
     image: circular2,
