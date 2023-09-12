@@ -6,7 +6,7 @@
 
 </h4>
 
-## <p style-"color:#FF7B00;">Eduskill</p>
+## Eduskill
 
 1. Pull in terminal
 ```
