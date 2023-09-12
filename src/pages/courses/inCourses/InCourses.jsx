@@ -32,16 +32,10 @@ const InCourses = () => {
       js.src = f;
       js.async = 1;
       fjs.parentNode.insertBefore(js, fjs);
-    })(
-      window,
-      document,
-      "script",
-      "Botsonic",
-      "https://widget.writesonic.com/CDN/botsonic.min.js"
-    );
+    })(window, document, "script", "Botsonic", "https://widget.writesonic.com/CDN/botsonic.min.js");
     Botsonic("init", {
       serviceBaseUrl: "https://api.botsonic.ai",
-      token: "e41575b1-8cb7-4f99-8388-943cacdd8d70",
+      token: "7397409c-1783-4df3-bc3d-bc5dc6209b97",
     });
   }, []);
 
