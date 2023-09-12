@@ -223,34 +223,34 @@ export const layers_3 = [layer_3];
 export const circleTeacher = [
   {
     id: 1,
-    name: "Theresa Webb",
-    job: "Application Support Analyst Lead",
+    name: "Hariz Izzuddin",
+    job: "Product Owner",
     position:
-      "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
+      "Founder Eduskill & GoCab.",
     icons: [<AiOutlineTwitter />, <AiFillLinkedin />], // Add the icons here
     image: circular1,
   },
   {
     id: 2,
-    name: "Courtney Henry",
-    job: "Director, Undergraduate Analytics and Planning",
-    position: "Lead engineering teams at Figma, Pitch, and Protocol Labs.",
+    name: "Daniel Krisna",
+    job: "Front-End Web Developer",
+    position: "Developer.",
     icons: [<AiOutlineTwitter />, <AiFillLinkedin />], // Add the icons here
     image: circular2,
   },
   {
     id: 3,
-    name: "Albert Flores",
-    job: "Career Educator",
-    position: "Former PM for Linear, Lambda School, and On Deck.",
+    name: "Fahmi Wahyu Alfian",
+    job: "Mobile Developer",
+    position: "Developer.",
     icons: [<AiOutlineTwitter />, <AiFillLinkedin />], // Add the icons here
     image: circular3,
   },
   {
     id: 4,
-    name: "Marvin McKinney",
-    job: "Co-op & Internships Program & Operations Manager",
-    position: "Former frontend dev for Linear, Coinbase, and Postscript.  ",
+    name: "Aprilia",
+    job: "UI/UX Designer",
+    position: "Tech.  ",
     icons: [<AiOutlineTwitter />, <AiFillLinkedin />], // Add the icons here
     image: circular4,
   },

@@ -4,6 +4,7 @@ import { circleTeacher } from "@/Data"; // Import the circleTeacher data
 const CircularImg = () => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-4">
+      {" "}
       {/* Center the content */}
       {circleTeacher.map((item, index) => (
         <div key={item.id} className="w-full">
@@ -19,14 +20,14 @@ const CircularImg = () => {
               <p className="font-semibold md:text-base text-sm">{item.name}</p>
               <p
                 className={`text-Orange_Teritiary md:text-base text-sm ${
-                  index === 2 ? "my-3" : ""
+                  index === 2 ? "" : ""
                 }`}
               >
                 {item.job}
               </p>
               <p
                 className={`text-[#667085] md:mx-3 md:text-sm text-xs ${
-                  index === 2 ? "mt-0 md:mb-5 mb-2" : ""
+                  index === 2 ? "" : ""
                 }`}
               >
                 {item.position}
