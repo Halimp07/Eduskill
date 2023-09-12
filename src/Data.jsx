@@ -41,8 +41,8 @@ import layer_3 from "./assets/third_hero_layer.png";
 // Circle
 import circular1 from "./assets/pages/Home/circular_teacher1.png";
 import circular2 from "./assets/pages/Home/circular_teacher2.png";
-import circular3 from "./assets/circular_teacher3.png";
-import circular4 from "./assets/circular_teacher4.png";
+import circular3 from "./assets/pages/Home/circular_teacher3.png";
+import circular4 from "./assets/pages/Home/circular_teacher4.png";
 
 // Reviews
 import reviews1 from "./assets/reviews_1.png";
@@ -248,9 +248,9 @@ export const circleTeacher = [
   },
   {
     id: 4,
-    name: "Aprilia",
+    name: "Aprilia Dwi Cristyana",
     job: "UI/UX Designer",
-    position: "Tech.  ",
+    position: "Chief Creative Officer.  ",
     icons: [<AiOutlineTwitter />, <AiFillLinkedin />], // Add the icons here
     image: circular4,
   },
