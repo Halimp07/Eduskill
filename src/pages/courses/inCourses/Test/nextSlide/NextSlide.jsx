@@ -4,7 +4,7 @@ import { slideDot } from '@/Data'; // Adjust the import path based on your proje
 export const NextSlide = () => {
   return (
     <div>
-        <div>testing</div>
+        <div>test</div>
       {/* Map over slideDot and render the items */}
       {slideDot.map((slide) => (
         <div key={slide.id}>
