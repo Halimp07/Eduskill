@@ -23,7 +23,6 @@ module.exports = {
       },
       colors: {
         Teal: "#2F6C6D",
-        HummingBird: "#d1f1ee",
         yellow: "#e4d63b",
         Solitude: "#FFFFFF",
         gray: "#4B4B4C",
