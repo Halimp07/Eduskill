@@ -10,7 +10,7 @@
 
 1. Pull in terminal
 ```
-git clone https://github.com/Halimp07/Eduskill.git
+git clone https://github.com/bforbilly/eduskill-course-react-frontend-app.git
 ```
 >
 2.Installation
@@ -18,7 +18,7 @@ git clone https://github.com/Halimp07/Eduskill.git
 npm i
 ```
 💻 On Computer
-> Website : https://eduskill.id/
+> Website : https://eduskill-course.vercel.app/
 
  <a href="https://eduskill.id/">
       <img width="1200" alt="home" src="https://github.com/Halimp07/image-readme/blob/main/eduskill/home.png">
