@@ -19,7 +19,7 @@ const InCourses = () => {
   const embedUrl = videoId ? `https://www.youtube.com/embed/${videoId}` : null;
 
   useEffect(() => {
-    // Insert your script here
+    // Combine or replace script here
     (function (w, d, s, o, f, js, fjs) {
       w["botsonic_widget"] = o;
       w[o] =
@@ -32,17 +32,22 @@ const InCourses = () => {
       js.src = f;
       js.async = 1;
       fjs.parentNode.insertBefore(js, fjs);
-    })(window, document, "script", "Botsonic", "https://widget.writesonic.com/CDN/botsonic.min.js");
+    })(
+      window,
+      document,
+      "script",
+      "Botsonic",
+      "https://widget.botsonic.com/CDN/botsonic.min.js"
+    );
     Botsonic("init", {
-      serviceBaseUrl: "https://api.botsonic.ai",
-      token: "b90e88d3-c19e-4043-b22c-d383dc84341d",
+      serviceBaseUrl: "https://api-azure.botsonic.ai",
+      token: "5d2e24cc-33ca-479f-bcc6-9b9d45ae1f22",
     });
-  }, []);
+  }, []); // Run only once on component mount
 
   const handleDotClick = (index) => {
     setActiveDot(index);
   };
-
   const handleNextDot = () => {
     setActiveDot((prevDot) => (prevDot === 4 ? 0 : prevDot + 1));
   };
