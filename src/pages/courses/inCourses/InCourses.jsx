@@ -35,7 +35,7 @@ const InCourses = () => {
     })(window, document, "script", "Botsonic", "https://widget.writesonic.com/CDN/botsonic.min.js");
     Botsonic("init", {
       serviceBaseUrl: "https://api.botsonic.ai",
-      token: "7397409c-1783-4df3-bc3d-bc5dc6209b97",
+      token: "b90e88d3-c19e-4043-b22c-d383dc84341d",
     });
   }, []);
 
